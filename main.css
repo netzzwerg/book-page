@@ -1,4 +1,91 @@
-/* line 1, scss/main.scss */
+@charset "UTF-8";
+/* line 1, scss/component/_typography.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, scss/component/_typography.scss */
 body {
-  background-color: #FFF;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 9, scss/component/_typography.scss */
+h1 {
+  font-size: 44px;
+  font-size: 4.4rem;
+}
+
+/* line 13, scss/component/_typography.scss */
+h2 {
+  font-size: 37px;
+  font-size: 3.7rem;
+}
+
+/* line 17, scss/component/_typography.scss */
+h3 {
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+
+/* line 21, scss/component/_typography.scss */
+h4 {
+  font-size: 23px;
+  font-size: 2.3rem;
+}
+
+/* line 25, scss/component/_typography.scss */
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/* line 29, scss/component/_typography.scss */
+h6 {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+/* line 9, scss/main.scss */
+.left {
+  float: left !important;
+}
+
+/* line 10, scss/main.scss */
+.right {
+  float: right !important;
+}
+
+/* line 11, scss/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 39, scss/base/_mixin.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 40, scss/base/_mixin.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 12, scss/main.scss */
+.hide {
+  display: none;
+}
+
+/* line 15, scss/main.scss */
+body {
+  background: white;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
 }
