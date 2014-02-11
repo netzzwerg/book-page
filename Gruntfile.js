@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
     watch: {
       scss: {
-        files: ['scss/*.scss'],
+        files: ['scss/**/*.scss'],
         tasks: ['compass'], // Add more tasks here.
         options: {
           livereload: 35729

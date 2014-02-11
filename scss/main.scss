@@ -20,8 +20,188 @@ body {
   font-family: $font-family;
   font-weight: $font-weight;
   font-style: $font-style;
-  line-height: 1; // Set to $base-line-height to take on browser default of 150%
+  line-height: 150%; // Set to $base-line-height to take on browser default of 150%
   position: relative;
   cursor: $cursor-default;
   -webkit-font-smoothing: antialiased;
 }
+
+p, .header {
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+p:first-child, .toc h3 { 
+  padding-top: 120px;
+}
+
+
+/* column layout */
+#container3 {
+  width: 1740px; // 3 x 580px
+  margin: 50px auto;
+
+  clear:left;
+  //float:left;
+  //width:100%;
+  overflow:hidden;
+  background:#EDE0CE;
+}
+
+#container2 {
+  clear:left;
+  float:left;
+  width:100%;
+  position:relative;
+  right:33.333%;
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:33.33%;
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#col1 {
+  float:left;
+  width:29.33%;
+  position:relative;
+  left:68.67%;
+  overflow:hidden;
+}
+
+#col2 {
+  float:left;
+  width:29.33%;
+  position:relative;
+  left:72.67%;
+  overflow:hidden;
+}
+
+#col3 {
+  float:left;
+  width:29.33%;
+  position:relative;
+  left:76.67%;
+  overflow:hidden;
+}
+
+
+// em in media queries respond to the font size 
+// of the browser that the visitor is using.
+
+@media only screen and (max-width: 20em) { // 352px
+  body {
+    background-color: red !important;
+  }
+}
+
+
+@media only screen and (min-width: 20.063em) and (max-width: 60em) { // 800px
+
+  p:first-child {
+    padding: 0 15px;
+  }
+
+  #col1 {
+    float: none !important;
+    width: 100% !important;
+    left: 0px !important;
+  }
+
+  #col2 {
+    float: none !important;
+    width: 100% !important;
+    left: 0px !important;
+  }
+
+  #col3 {
+    display: none;
+  }
+
+  #container3 {
+    clear:left;
+    width: 90% !important;
+    overflow:hidden;
+    margin: 50px auto;
+  }
+
+  #container2 {
+    clear:left;
+    float:left;
+    width: 100% !important;
+    overflow:hidden;
+    right: 0px !important;
+  }
+
+  #container1 {
+    float:left;
+    width: 100% !important;
+    position:relative;
+    right: 0px !important;
+  }
+
+}
+
+
+@media only screen and (min-width: 60.063em) and (max-width: 110em) {
+
+  #container3 {
+    float:none;
+    width:90%;
+    overflow:hidden;
+  margin: 50px auto;
+  }
+
+  #container2 {
+    clear:left;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    right:0px;
+  }
+
+  #container1 {
+    float:left;
+    width:100%;
+    position:relative;
+    right:50%;
+  }
+
+  #col1 {
+    float:left;
+    width:46%;
+    position:relative;
+    left:52%;
+    overflow:hidden;
+  }
+
+  #col2 {
+    float:left;
+    width:46%;
+    position:relative;
+    left:56%;
+    overflow:hidden;
+  }
+
+  #col3 {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 111em) {
+
+}
+
+
