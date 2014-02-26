@@ -33,7 +33,8 @@
   }
 }
 
-
+// micro clearfix by nicolas gallagher
+// http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix {
   *zoom:1;
   &:before, &:after { content: " "; display: table; }

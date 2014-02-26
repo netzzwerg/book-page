@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@media (min-width: 40rem) {
+  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.full {
+    width: 100%;
+  }
+
+  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.half {
+    width: 50%;
+  }
+
+  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.third {
+    width: 33.3%;
+  }
+
+  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.fourth {
+    width: 24.95%;
+  }
+
+  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.flow-opposite {
+    float: right;
+  }
+}
+/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 9, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h1 {
+  font-size: 44px;
+  font-size: 4.4rem;
+}
+
+/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h2 {
+  font-size: 37px;
+  font-size: 3.7rem;
+}
+
+/* line 17, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h3 {
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+
+/* line 21, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h4 {
+  font-size: 23px;
+  font-size: 2.3rem;
+}
+
+/* line 25, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+h6 {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
+p + p {
+  text-indent: 2em;
+}
+
+@media (min-width: 40rem) {
+  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.full {
+    width: 100%;
+  }
+
+  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.two-thirds {
+    width: 66.7%;
+  }
+
+  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.half {
+    width: 50%;
+  }
+
+  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.third {
+    width: 33.3%;
+  }
+
+  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.fourth {
+    width: 24.95%;
+  }
+
+  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  .column.flow-opposite {
+    float: right;
+  }
+}
+/* line 9, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+.left {
+  float: left !important;
+}
+
+/* line 10, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+.right {
+  float: right !important;
+}
+
+/* line 11, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 40, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 41, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 12, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+.hide {
+  display: none;
+}
+
+/* line 15, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+body {
+  background: #f6f6f6;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 29, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+p, .header {
+  padding: 0 15px;
+}
+
+/* line 33, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 38, /Users/bvarga/01_Workplace/book-page/scss/index.scss */
+p:first-child, .toc h3 {
+  padding-top: 120px;
+}
+
+/* line 5, scss/guide.scss */
+.grid {
+  text-align: center;
+}
+
+/* line 7, scss/guide.scss */
+.grid span {
+  background: rgba(225, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* line 16, scss/guide.scss */
+.grid .container {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  padding: 1rem 1rem 0 1rem;
+}
+
+@media (min-width: 40rem) {
+  /* line 22, scss/guide.scss */
+  .grid .container {
+    padding: 1rem 0 0 0;
+  }
+}
+/* line 25, scss/guide.scss */
+.grid .column {
+  margin-bottom: 1rem;
+}

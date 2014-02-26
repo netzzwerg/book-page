@@ -1,0 +1,25 @@
+@charset "UTF-8"; 
+
+@import "index";
+
+.grid { text-align: center; }
+
+.grid span {
+  background: rgba(225,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.2);
+  display: block;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.grid .container {
+  border: 2px dashed rgba(255,255,255,0.3);
+  padding: 1rem 1rem 0 1rem;
+}
+
+@media (min-width: 40rem) {
+  .grid .container { padding: 1rem 0 0 0; }
+}
+
+.grid .column { margin-bottom: 1rem; }
