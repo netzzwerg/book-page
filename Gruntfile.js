@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 9000,
-          hostname: 'localhost', // Change to 0.0.0.0 to external connection.
+          hostname: '0.0.0.0', // Change to 0.0.0.0 to external connection.
           open: true,
           middleware: function (connect, options) {
             return [

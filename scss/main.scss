@@ -26,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p, .header {
+.header {
   padding: 0 15px;
 }
 
@@ -36,7 +36,7 @@ a {
 }
 
 p:first-child, .toc h3 { 
-  padding-top: 120px;
+  padding-top: 20px;
 }
 
 
@@ -95,6 +95,12 @@ p:first-child, .toc h3 {
   overflow:hidden;
 }
 
+
+.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: normal;
+}
 
 // em in media queries respond to the font size 
 // of the browser that the visitor is using.
