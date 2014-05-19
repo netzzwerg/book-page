@@ -1,0 +1,26 @@
+body {
+	counter-reset: figures;
+}
+
+.figure {
+	background: #fff;
+	margin: 0 auto 1em;
+}
+
+.figure img {
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+}
+
+.figure figcaption {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #666666;
+	padding: .5em;
+	counter-increment: figures;
+}
+
+.figure figcaption:before {
+	content: 'Fig. ' counter(figures) ' - ';
+}

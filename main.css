@@ -85,7 +85,7 @@ h6 {
 }
 
 /* line 3, scss/component/_article.scss */
-article p, article h1, article h2, article h3, article h4, article h5 {
+article p, article h1, article h2, article h3, article h4, article h5, article figcaption {
   padding: 0 2.4rem;
 }
 /* line 7, scss/component/_article.scss */
@@ -105,6 +105,38 @@ article p + p {
 /* line 21, scss/component/_article.scss */
 article header + p {
   font-size: 1.8rem;
+}
+
+/* line 1, scss/component/_figure.scss */
+body {
+  counter-reset: figures;
+}
+
+/* line 5, scss/component/_figure.scss */
+.figure {
+  background: #fff;
+  margin: 0 auto 1em;
+}
+
+/* line 10, scss/component/_figure.scss */
+.figure img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* line 16, scss/component/_figure.scss */
+.figure figcaption {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #666666;
+  padding: .5em;
+  counter-increment: figures;
+}
+
+/* line 24, scss/component/_figure.scss */
+.figure figcaption:before {
+  content: "Fig. " counter(figures) " - ";
 }
 
 @media (min-width: 40rem) {
