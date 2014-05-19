@@ -14,107 +14,305 @@
 			<article class="page" id="col1">
 
 				<header>
-                	<h1>Return of the Jedi <span class="amp">&amp;</span> The Clone Wars</h1>
-            	</header>
+					<h1>"Pattern"-ity Testing, Proto-Patterns <span class="amp">&amp;</span> The Rule Of Three</h1>
+				</header>
 
-				<p>I'm surprised you had the courage to take the responsibility yourself. No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip; Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. As you wish. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.</p> 
+				<p>Remember that not every algorithm, best practice or solution represents what might be considered a complete pattern. There may be a few key ingredients here that are missing and the pattern community is generally wary of something claiming to be one unless it has been heavily vetted. Even if something is presented to us which <strong>appears</strong> to meet the criteria for a pattern, it should not be considered one until it has undergone suitable periods of scrutiny and testing by others.</p>
 
-				<h2>The Clone Wars</h2> 
+				<p>Looking back upon the work by Alexander once more, he claims that a pattern should both be a process and a "thing". This definition is obtuse on purpose as he follows by saying that it is the process which should create the "thing". This is a reason why patterns generally focus on addressing a visually identifiable structure i.e we should be able to visually depict (or draw) a picture representing the structure that placing the pattern into practice results in.</p>
 
-				<p>Still, she's got a lot of spirit. I don't know, what do you think? I'm surprised you had the courage to take the responsibility yourself. Your eyes can deceive you. Don't trust them. I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Oh God, my uncle. How am I ever gonna explain this? I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.</p> 
+				<img src="img/01.png" width="100%"></img>
 
-				<ul> 
-					<li>Partially, but it also obeys your commands.</li> 
-					<li>I suggest you try it again, Luke. This time, let go your conscious self and act on instinct.</li> 
-					<li>No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip;</li> <li>Oh God, my uncle. How am I ever gonna explain this?</li> </ul> <h3>The Sith Lords</h3> <p>Escape is not his plan. I must face him, alone. I care. So, what do you think of her, Han? I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of courage. It's more like&hellip;suicide.</p> <h4>Jedi Academy</h4> <p>Hey, Luke! May the Force be with you. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. But with the blast shield down, I can't even see! How am I supposed to fight? A tremor in the Force. The last time I felt it was in the presence of my old master.</p> <ol> <li>What!?</li> <li>Remember, a Jedi can feel the Force flowing through him.</li> <li>Escape is not his plan. I must face him, alone.</li> <li>I suggest you try it again, Luke. This time, let go your conscious self and act on instinct.</li> </ol> <h5>Revenge of the Sith</h5> <p>He is here. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. Remember, a Jedi can feel the Force flowing through him.</p> 
+				<p>Alternatively, the individual(s) sharing the pattern may not have the time or interest of going through the "pattern"-ity process and might release a short description of their proto-pattern instead. Brief descriptions or snippets of this type of pattern are known as patlets.</p>
+
+				<p>The work involved in fully documenting a qualified pattern can be quite daunting. Looking back at some of the earliest work in the field of design patterns, a pattern may be considered "good" if it does the following:</p>
+
+				<ul type="disc">
+					<li><strong>Solves a particular problem</strong>: Patterns are not supposed to just capture principles or strategies. They need to capture solutions. This is one of the most essential ingredients for a good pattern.</li>
+					<li><strong>The solution to this problem cannot be obvious</strong>: We can find that problem-solving techniques often attempt to derive from well-known first principles. The best design patterns usually provide solutions to problems indirectly - this is considered a necessary approach for the most challenging problems related to design.</li>
+					<li><strong>The concept described must have been proven</strong>: Design patterns require proof that they function as described and without this proof the design cannot be seriously considered. If a pattern is highly speculative in nature, only the brave may attempt to use it.</li>
+					<li><strong>It must describe a relationship</strong>: In some cases it may appear that a pattern describes a type of module. Although an implementation may appear this way, the official description of the pattern must describe much deeper system structures and mechanisms that explain its relationship to code.</li>
+				</ul>
+
+				<p>We would be forgiven for thinking that a proto-pattern which fails to meet guidelines isn't worth learning from, however, this is far from the truth. Many proto-patterns are actually quite good. I’m not saying that all proto-patterns are worth looking at, but there are quite a few useful ones in the wild that could assist us with future projects. Use best judgment with the above list in mind and you’ll be fine in your selection process.</p>
+
+				<p>One of the additional requirements for a pattern to be valid is that they display some recurring phenomenon. This is often something that can be qualified in at least three key areas, referred to as the <em>rule of three</em>. To show recurrence using this rule, one must demonstrate:</p>
+
+				<ol start="1" type="1">
+					<li><strong>Fitness of purpose</strong> - how is the pattern considered successful?</li>
+					<li><strong>Usefulness</strong> - why is the pattern considered successful?</li>
+					<li><strong>Applicability</strong> - is the design worthy of being a pattern because it has wider applicability? If so, this needs to be explained. When reviewing or defining a pattern, it is important to keep the above in mind.</li>
+				</ol>
+
+				<p>&hellip;</p>
+
+				<p>&nbsp;</p>
+
+				<h2>Design Pattern Categorization</h2>
+
+				<p>In my early experiences of learning about design patterns, I personally found the following table a very useful reminder of what a number of patterns has to offer - it covers the 23 Design Patterns mentioned by the GoF. The original table was summarized by Elyse Nielsen back in 2004 and I've modified it where necessary to suit our discussion in this section of the book.</p>
+
+				<p>I recommend using this table as reference, but do remember that there are a number of additional patterns that are not mentioned here but will be discussed later in the book.</p>
+
+				<h3>A brief note on classes</h3>
+
+				<p>Keep in mind that there will be patterns in this table that reference the concept of "classes". JavaScript is a class-less language, however classes can be simulated using functions.</p>
+
+				<p>The most common approach to achieving this is by defining a JavaScript function where we then create an object using the <code>new</code> keyword. <code>this</code> can be used to help define new properties and methods for the object as follows:</p>
+
+				<code>
+// A car "class"
+function Car( model ) {
+ 
+  this.model = model;
+  this.color = "silver";
+  this.year  = "2012";
+ 
+  this.getInfo = function () {
+	return this.model + " " + this.year;
+  };
+ 
+}</code>
+
+				<p>We can then instantiate the object using the Car constructor we defined above like this:</p>
+
+				<code>
+var myCar = new Car("ford");
+ 
+myCar.year = "2010";
+
+console.log( myCar.getInfo() );</code>
+
+				<p>For more ways to define "classes" using JavaScript, see Stoyan Stefanov's useful <a href="http://www.phpied.com/3-ways-to-define-a-javascript-class/">post</a> on them.</p>
+
+				<p>Let us now proceed to review the table.</p>
+
+				<table border="0" cellpadding="1" cellspacing="1" >
+				<tbody>
+				<tr>
+				<td colspan="4"><strong><b>Creational </b></strong></td>
+				<td colspan="4">Based on the concept of creating an object.</td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Class </strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Factory Method </em></td>
+				<td colspan="3">This makes an instance of several derived classes based on interfaced data or events.</td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Object</strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Abstract Factory </em></td>
+				<td colspan="3">Creates an instance of several families of classes without detailing concrete classes. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Builder</em></td>
+				<td colspan="3">Separates object construction from its representation, always creates the same type of object. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Prototype</em></td>
+				<td colspan="3">A fully initialized instance used for copying or cloning. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Singleton</em></td>
+				<td colspan="3">A class with only a single instance with global access points. </td>
+				</tr>
+				<tr>
+				<td colspan="4"><strong><b>Structural </b> </strong></td>
+				<td colspan="4">Based on the idea of building blocks of objects </td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Class </strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Adapter</em></td>
+				<td colspan="3"> Match interfaces of different classes therefore classes can work together despite incompatible interfaces </td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Object</strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Adapter</em></td>
+				<td colspan="3"> Match interfaces of different classes therefore classes can work together despite incompatible interfaces </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Bridge</em></td>
+				<td colspan="3">Separates an object's interface from its implementation so the two can vary independently</td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Composite</em></td>
+				<td colspan="3"> A structure of simple and composite objects which makes the total object more than just the sum of its parts.</td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Decorator</em></td>
+				<td colspan="3"> Dynamically add alternate processing to objects.</td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Facade</em></td>
+				<td colspan="3"> A single class that hides the complexity  of an entire subsystem.</td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Flyweight</em></td>
+				<td colspan="3"> A fine-grained instance used for efficient sharing of information that is contained elsewhere. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Proxy</em></td>
+				<td colspan="3"> A place holder object representing the true object </td>
+				</tr>
+				<tr>
+				<td colspan="4"><strong><b>Behavioral </b></strong></td>
+				<td colspan="4">Based on the way objects play and work together.</td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Class </strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Interpreter</em></td>
+				<td colspan="3"> A way to include language elements in an application to match the grammar of the intended language. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Template <br> Method </em></td>
+				<td colspan="3">Creates the shell of an algorithm in a method, then defer the exact steps to a subclass.</td>
+				</tr>
+				<tr>
+				<td colspan="8"><em><strong>Object</strong></em></td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Chain of <br>Responsibility </em></td>
+				<td colspan="3"> A way of passing a request between a chain of objects to find the object that can handle the request. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Command</em></td>
+				<td colspan="3"> Encapsulate a command request as an object to enable, logging and/or queuing of requests, and provides error-handling for unhandled requests. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Iterator</em></td>
+				<td colspan="3"> Sequentially access the elements of a collection without knowing the inner workings of the collection.</td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Mediator</em></td>
+				<td colspan="3"> Defines simplified communication between  classes to prevent a group of classes from referring explicitly to each other. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Memento</em></td>
+				<td colspan="3"> Capture an object's  internal state to be able to restore it later. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Observer</em></td>
+				<td colspan="3"> A way of notifying change to a number of classes to ensure consistency between the classes. </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>State</em></td>
+				<td colspan="3"> Alter an object's behavior when its state changes </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Strategy</em></td>
+				<td colspan="3"> Encapsulates an algorithm inside a class separating the selection from the implementation </td>
+				</tr>
+				<tr>
+				<td colspan="5"><em>Visitor</em></td>
+				<td colspan="3"> Adds a new operation to a class without changing the class </td>
+				</tr>
+				</tbody>
+				</table>
 
 			</article>
 
 			<article class="page" id="col2">
 
-				<p>Suddenly she came upon a little three-legged table, all made of solid glass; there was nothing on it except a tiny
-				golden key, and Alice’s first thought was that it might belong to one of the doors of the hall; but, alas! either the
-				locks were too large, or the key was too small, but at any rate it would not open any of them. However, on the second
-				time round, she came upon a low curtain she had not noticed before, and behind it was a little door about fifteen
-				inches high: she tried the little golden key in the lock, and to her great delight it fitted!</p>
+				<p>The Observer pattern is useful for decoupling a number of different scenarios in application design and if you haven't been using it, I recommend picking up one of the pre-written implementations mentioned today and just giving it a try out. It's one of the easier design patterns to get started with but also one of the most powerful.</p>
 
-				<p>Alice opened the door and found that it led into a small passage, not much larger than a rat-hole: she knelt down
-				and looked along the passage into the loveliest garden you ever saw. How she longed to get out of that dark hall, and
-				wander about among those beds of bright flowers and those cool fountains, but she could not even get her head though
-				the doorway; ‘and even if my head would go through,’ thought poor Alice, ‘it would be of very little use without my
-				shoulders. Oh, how I wish I could shut up like a telescope! I think I could, if I only know how to begin.’ For, you
-				see, so many out-of-the-way things had happened lately, that Alice had begun to think that very few things indeed were
-				really impossible.</p>
+				<h2>The Mediator Pattern</h2>
 
-				<p>There seemed to be no use in waiting by the little door, so she went back to the table, half hoping she might find
-				another key on it, or at any rate a book of rules for shutting people up like telescopes: this time she found a little
-				bottle on it, (‘which certainly was not here before,’ said Alice,) and round the neck of the bottle was a paper label,
-				with the words ‘DRINK ME’ beautifully printed on it in large letters.</p>
+				<p>In the section on the Observer pattern, we were introduced to a way of channeling multiple event sources through a single object. This is also known as Publish/Subscribe or Event Aggregation. It's common for developers to think of Mediators when faced with this problem, so let's explore how they differ.</p>
 
-				<p>It was all very well to say ‘Drink me,’ but the wise little Alice was not going to do <em>that</em> in a hurry. ‘No,
-				I’ll look first,’ she said, ‘and see whether it’s marked “poison” or not’; for she had read several nice little
-				histories about children who had got burnt, and eaten up by wild beasts and other unpleasant things, all because they
-				<em>would</em> not remember the simple rules their friends had taught them: such as, that a red-hot poker will burn you
-				if you hold it too long; and that if you cut your finger <em>very</em> deeply with a knife, it usually bleeds; and she
-				had never forgotten that, if you drink much from a bottle marked ‘poison,’ it is almost certain to disagree with you,
-				sooner or later.</p>
+				<p>The dictionary refers to a mediator as <i>a neutral party that assists in negotiations and conflict resolution</i>. In our world, a mediator is a behavioral design pattern that allows us to expose a unified interface through which the different parts of a system may communicate.</p>
 
-				<p>However, this bottle was <em>not</em> marked ‘poison,’ so Alice ventured to taste it, and finding it very nice, (it
-				had, in fact, a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered
-				toast,) she very soon finished it off.</p>
+				<img src="img/02.png" width="100%"></img>
 
-				<p>‘What a curious feeling!’ said Alice; ‘I must be shutting up like a telescope.’</p>
+				<p>If it appears a system has too many direct relationships between components, it may be time to have a central point of control that components communicate through instead. The Mediator promotes loose coupling by ensuring that instead of components referring to each other explicitly, their interaction is handled through this central point. This can help us decouple systems and improve the potential for component reusability.</p>
 
-				<p>And so it was indeed: she was now only ten inches high, and her face brightened up at the thought that she was now
-				the right size for going through the little door into that lovely garden. First, however, she waited for a few minutes
-				to see if she was going to shrink any further: she felt a little nervous about this; ‘for it might end, you know,’ said
-				Alice to herself, ‘in my going out altogether, like a candle. I wonder what I should be like then?’ And she tried to
-				fancy what the flame of a candle is like after the candle is blown out, for she could not remember ever having seen
-				such a thing.</p>
+				<p>A real-world analogy could be a typical airport traffic control system. A tower (Mediator) handles what planes can take off and land because all communications (notifications being listened out for or broadcast) are done from the planes to the control tower, rather than from plane-to-plane. A centralized controller is key to the success of this system and that's really the role a Mediator plays in software design.</p>
 
-				<p>After a while, finding that nothing more happened, she decided on going into the garden at once; but, alas for poor
-				Alice! when she got to the door, she found she had forgotten the little golden key, and when she went back to the table
-				for it, she found she could not possibly reach it: she could see it quite plainly through the glass, and she tried her
-				best to climb up one of the legs of the table, but it was too slippery; and when she had tired herself out with trying,
-				the poor little thing sat down and cried.</p>
+				<img src="img/03.png" width="100%"></img>
 
-				<p>‘Come, there’s no use in crying like that!’ said Alice to herself, rather sharply; ‘I advise you to leave off this
-				minute!’ She generally gave herself very good advice, (though she very seldom followed it), and sometimes she scolded
-				herself so severely as to bring tears into her eyes; and once she remembered trying to box her own ears for having
-				cheated herself in a game of croquet she was playing against herself, for this curious child was very fond of
-				pretending to be two people. ‘But it’s no use now,’ thought poor Alice, ‘to pretend to be two people! Why, there’s
-				hardly enough of me left to make <em>one</em> respectable person!’</p>
+				<p>Another analogy would be DOM event bubbling and event delegation. If all subscriptions in a system are made against the document rather than individual nodes, the document effectively serves as a Mediator. Instead of binding to the events of the individual nodes, a higher level object is given the responsibility of notifying subscribers about interaction events.</p>
 
-				<p>Soon her eye fell on a little glass box that was lying under the table: she opened it, and found in it a very small
-				cake, on which the words ‘EAT ME’ were beautifully marked in currants. ‘Well, I’ll eat it,’ said Alice, ‘and if it
-				makes me grow larger, I can reach the key; and if it makes me grow smaller, I can creep under the door; so either way
-				I’ll get into the garden, and I don’t care which happens!’</p>
+				<p>When it comes to the Mediator and Event Aggregator patterns, there are some times where it may look like the patterns are interchangeable due to implementation similarities. However, the semantics and intent of these patterns are very different.</p>
 
-				<p>She ate a little bit, and said anxiously to herself, ‘Which way? Which way?’, holding her hand on the top of her
-				head to feel which way it was growing, and she was quite surprised to find that she remained the same size: to be sure,
-				this generally happens when one eats cake, but Alice had got so much into the way of expecting nothing but
-				out-of-the-way things to happen, that it seemed quite dull and stupid for life to go on in the common way.</p>
+				<p>And even if the implementations both use some of the same core constructs, I believe there is a distinct difference between them. I also believe they should not be interchanged or confused in communication because of the differences.</p>
 
-				<p>So she set to work, and very soon finished off the cake.</p>
+				<p><strong>A Simple Mediator</strong></p>
 
+				<p>A Mediator is an object that coordinates interactions (logic and behavior) between multiple objects. It makes decisions on when to call which objects, based on the actions (or inaction) of other objects and input.</p>
+
+				
 			</article>
 
 			<div class="toc" id="col3">
 				<h3>Table of Contents</h3>
-				<ol>
-					<li><a href="chapter1">Down the Rabbit-Hole</a></li>
-					<li><a href="chapter2">The Pool of Tears</a></li>
-					<li><a href="chapter3">A Caucus-Race and a Long Tale</a></li>
-					<li><a href="chapter4">The Rabbit Sends in a Little Bill</a></li>
-					<li><a href="chapter5">Advice from a Caterpillar</a></li>
-					<li><a href="chapter6">Pig and Pepper</a></li>
-					<li><a href="chapter7">A Mad Tea-Party</a></li>
-					<li><a href="chapter8">The Queen’s Croquet-Ground</a></li>
-					<li><a href="chapter9">The Mock Turtle’s Story</a></li>
-					<li><a href="chapter10">The Lobster Quadrille</a></li>
-					<li><a href="chapter11">Who Stole the Tarts?</a></li>
-					<li><a href="chapter12">Alice’s Evidence</a></li>
-				</ol>
+<ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#whatisapattern">What is a Pattern?</a></li>
+        <li><a href="#patternity">"Pattern"-ity Testing, Proto-Patterns &amp; The Rule Of Three</a></li>
+        <li><a href="#designpatternstructure">The Structure Of A Design Pattern</a></li>
+        <li><a href="#writingdesignpatterns">Writing Design Patterns</a></li>
+        <li><a href="#antipatterns">Anti-Patterns</a></li>
+        <li><a href="#categoriesofdesignpatterns">Categories Of Design Pattern</a></li>
+        <li><a href="#summarytabledesignpatterns">Summary Table Of Design Pattern Categorization</a></li>
+        <li><a href="#designpatternsjavascript">JavaScript Design Patterns
+          </a>
+          <ul>
+            <li class="subitem"><a href="#constructorpatternjavascript">Constructor Pattern</a></li>
+            <li class="subitem"><a href="#modulepatternjavascript">Module Pattern</a></li>
+            <li class="subitem"><a href="#revealingmodulepatternjavascript">Revealing Module Pattern</a></li>
+            <li class="subitem"><a href="#singletonpatternjavascript">Singleton Pattern</a></li>
+            <li class="subitem"><a href="#observerpatternjavascript">Observer Pattern</a></li>
+             <li class="subitem"><a href="#mediatorpatternjavascript">Mediator Pattern</a></li>
+            <li class="subitem"><a href="#prototypepatternjavascript">Prototype Pattern</a></li>
+            <li class="subitem"><a href="#commandpatternjavascript">Command Pattern</a></li>
+            <li class="subitem"><a href="#facadepatternjavascript">Facade Pattern</a></li>
+            <li class="subitem"><a href="#factorypatternjavascript">Factory Pattern</a></li>
+            <li class="subitem"><a href="#mixinpatternjavascript">Mixin Pattern</a>
+            </li><li class="subitem"><a href="#decoratorpatternjavascript">Decorator Pattern</a></li>
+            <li class="subitem"><a href="#detailflyweight">Flyweight Pattern</a>
+        </li></ul>
+      </li>
+         <li><a href="#detailmvcmvp">JavaScript MV* Patterns</a>
+        <ul>
+          <li class="subitem"><a href="#detailmvc">MVC Pattern</a>
+          </li><li class="subitem"><a href="#detailmvp">MVP Pattern</a>
+          </li><li class="subitem"><a href="#detailmvvm">MVVM Pattern</a>
+        </li></ul>
+      </li>
+        <li><a href="#modularjavascript">Modern Modular JavaScript Design Patterns</a>
+        <ul>
+          <li class="subitem"><a href="#detailamd">AMD</a>
+          </li><li class="subitem"><a href="#detailcommonjs">CommonJS</a>
+            </li><li class="subitem"><a href="#detailharmony">ES Harmony</a>
+        </li></ul>
+        </li>
+
+        <li><a href="#designpatternsjquery">Design Patterns In jQuery</a>
+        <ul>
+          <li class="subitem"><a href="#compositepatternjquery">Composite Pattern</a></li>
+          <li class="subitem"><a href="#wrapperpatternjquery">Adapter Pattern</a></li>
+          <li class="subitem"><a href="#facadepatternjquery">Facade Pattern</a></li>
+          <li class="subitem"><a href="#observerpatternjquery">Observer Pattern</a></li>
+          <li class="subitem"><a href="#iteratorpatternjquery">Iterator Pattern</a></li>
+          <li class="subitem"><a href="#lazyinitialisationjquery">Lazy Initialization Pattern</a></li>
+          <li class="subitem"><a href="#proxypatternjquery">Proxy Pattern</a></li>
+          <li class="subitem"><a href="#builderpatternjquery">Builder Pattern</a></li>
+        </ul>
+      </li>
+
+        <li><a href="#jquerypluginpatterns">jQuery Plugin Design Patterns</a></li>
+        <li><a href="#detailnamespacing">JavaScript Namespacing Patterns</a></li>
+        <li><a href="#conclusions">Conclusions</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
 			</div>
 
 		</div>
