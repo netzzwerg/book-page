@@ -87,22 +87,23 @@ h6 {
 /* line 3, scss/component/_article.scss */
 article p, article h1, article h2, article h3, article h4, article h5, article figcaption {
   padding: 0 2.4rem;
+  word-wrap: break-word;
 }
-/* line 7, scss/component/_article.scss */
+/* line 8, scss/component/_article.scss */
 article p {
   text-align: justify;
   line-height: 1.5em;
 }
-/* line 12, scss/component/_article.scss */
+/* line 13, scss/component/_article.scss */
 article h1 {
   font-weight: 900;
   line-height: 1.1em;
 }
-/* line 17, scss/component/_article.scss */
+/* line 18, scss/component/_article.scss */
 article p + p {
   text-indent: 2em;
 }
-/* line 21, scss/component/_article.scss */
+/* line 22, scss/component/_article.scss */
 article header + p {
   font-size: 1.8rem;
 }
@@ -137,6 +138,105 @@ body {
 /* line 24, scss/component/_figure.scss */
 .figure figcaption:before {
   content: "Fig. " counter(figures) " - ";
+}
+
+/**
+ * Blackboard theme
+ *
+ * Adapted from Domenico Carbotta's TextMate theme of the same name
+ *
+ * @author Domenico Carbotta
+ * @author Craig Campbell
+ * @version 1.0.2
+ */
+/* line 11, scss/component/_code.scss */
+pre {
+  word-wrap: break-word;
+  margin: 0px;
+  padding: 10px;
+  color: #fff;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #2a2e30), color-stop(100%, #111414));
+  background-image: -webkit-radial-gradient(center center, #2a2e30, #111414);
+  background-image: -moz-radial-gradient(center center, #2a2e30, #111414);
+  background-image: -o-radial-gradient(center center, #2a2e30, #111414);
+  background-image: radial-gradient(center center, #2a2e30, #111414);
+  margin-bottom: 20px;
+  font-family: 'Monaco', courier, monospace;
+  box-shadow: 0 1px 2px #D1D1D1;
+  border-radius: 3px 0 0 3px;
+  overflow-y: hidden;
+  display: block;
+  margin: 35px 0;
+  padding: 0 0 20px 30px;
+  line-height: 100%;
+  /* Browser specific (not valid) styles to make codeformatted text wrap */
+}
+/* line 31, scss/component/_code.scss */
+pre code {
+  white-space: code-wrap;
+  /* css-3 */
+  white-space: -moz-code-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -code-wrap;
+  /* Opera 4-6 */
+  white-space: -o-code-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+/* line 39, scss/component/_code.scss */
+pre code + p {
+  margin-top: 1.5em;
+}
+/* line 43, scss/component/_code.scss */
+pre .comment {
+  color: #75715E;
+}
+/* line 47, scss/component/_code.scss */
+pre .constant {
+  color: #AE81FF;
+}
+/* line 51, scss/component/_code.scss */
+pre .storage {
+  color: #66D9EF;
+}
+/* line 55, scss/component/_code.scss */
+pre .string, pre .comment.docstring {
+  color: #E6DB74;
+}
+/* line 59, scss/component/_code.scss */
+pre .support.tag {
+  color: #fff;
+}
+/* line 63, scss/component/_code.scss */
+pre .keyword {
+  /* @todo some keywords use this light blue, most use the pink */
+  /*color: #66D9EF;*/
+  color: #F92672;
+}
+/* line 69, scss/component/_code.scss */
+pre .selector {
+  color: #F92672;
+}
+/* line 73, scss/component/_code.scss */
+pre .inherited-class {
+  font-style: italic;
+}
+/* line 77, scss/component/_code.scss */
+pre .operator, pre pre .support.tag-name, pre pre .entity.tag {
+  color: #F92672;
+}
+/* line 81, scss/component/_code.scss */
+pre .entity, pre pre .support.attribute, pre pre .entity.attribute {
+  color: #A6E22E;
+}
+/* line 85, scss/component/_code.scss */
+pre .css-property, pre pre .storage.function {
+  font-style: italic;
+}
+/* line 89, scss/component/_code.scss */
+pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
+  color: #A6E22E;
 }
 
 @media (min-width: 40rem) {
@@ -177,17 +277,17 @@ body {
     float: right;
   }
 }
-/* line 9, scss/main.scss */
+/* line 10, scss/main.scss */
 .left {
   float: left !important;
 }
 
-/* line 10, scss/main.scss */
+/* line 11, scss/main.scss */
 .right {
   float: right !important;
 }
 
-/* line 11, scss/main.scss */
+/* line 12, scss/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -201,12 +301,12 @@ body {
   clear: both;
 }
 
-/* line 12, scss/main.scss */
+/* line 13, scss/main.scss */
 .hide {
   display: none;
 }
 
-/* line 15, scss/main.scss */
+/* line 16, scss/main.scss */
 body {
   background: #f6f6f6;
   color: black;
@@ -221,24 +321,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 29, scss/main.scss */
+/* line 30, scss/main.scss */
 .header {
   padding: 0 15px;
 }
 
-/* line 33, scss/main.scss */
+/* line 34, scss/main.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 38, scss/main.scss */
+/* line 39, scss/main.scss */
 p:first-child, .toc h3 {
   padding-top: 20px;
 }
 
 /* column layout */
-/* line 44, scss/main.scss */
+/* line 45, scss/main.scss */
 #container3 {
   width: 1740px;
   margin: 50px auto;
@@ -248,7 +348,7 @@ p:first-child, .toc h3 {
   border: 20px solid #EEE;
 }
 
-/* line 56, scss/main.scss */
+/* line 57, scss/main.scss */
 #container2 {
   clear: left;
   float: left;
@@ -259,7 +359,7 @@ p:first-child, .toc h3 {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 66, scss/main.scss */
+/* line 67, scss/main.scss */
 #container1 {
   float: left;
   width: 100%;
@@ -269,7 +369,7 @@ p:first-child, .toc h3 {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 75, scss/main.scss */
+/* line 76, scss/main.scss */
 #col1 {
   float: left;
   width: 29.33%;
@@ -278,7 +378,7 @@ p:first-child, .toc h3 {
   overflow: hidden;
 }
 
-/* line 83, scss/main.scss */
+/* line 84, scss/main.scss */
 #col2 {
   float: left;
   width: 29.33%;
@@ -287,7 +387,7 @@ p:first-child, .toc h3 {
   overflow: hidden;
 }
 
-/* line 91, scss/main.scss */
+/* line 92, scss/main.scss */
 #col3 {
   float: left;
   width: 29.33%;
@@ -296,7 +396,7 @@ p:first-child, .toc h3 {
   overflow: hidden;
 }
 
-/* line 100, scss/main.scss */
+/* line 101, scss/main.scss */
 .amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
@@ -304,37 +404,37 @@ p:first-child, .toc h3 {
 }
 
 @media only screen and (max-width: 20em) {
-  /* line 110, scss/main.scss */
+  /* line 111, scss/main.scss */
   body {
     background-color: red !important;
   }
 }
 @media only screen and (min-width: 20.063em) and (max-width: 60em) {
-  /* line 118, scss/main.scss */
+  /* line 119, scss/main.scss */
   p:first-child {
     padding: 0 15px;
   }
 
-  /* line 122, scss/main.scss */
+  /* line 123, scss/main.scss */
   #col1 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 128, scss/main.scss */
+  /* line 129, scss/main.scss */
   #col2 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 134, scss/main.scss */
+  /* line 135, scss/main.scss */
   #col3 {
     display: none;
   }
 
-  /* line 138, scss/main.scss */
+  /* line 139, scss/main.scss */
   #container3 {
     clear: left;
     width: 90% !important;
@@ -342,7 +442,7 @@ p:first-child, .toc h3 {
     margin: 50px auto;
   }
 
-  /* line 145, scss/main.scss */
+  /* line 146, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -351,7 +451,7 @@ p:first-child, .toc h3 {
     right: 0px !important;
   }
 
-  /* line 153, scss/main.scss */
+  /* line 154, scss/main.scss */
   #container1 {
     float: left;
     width: 100% !important;
@@ -360,7 +460,7 @@ p:first-child, .toc h3 {
   }
 }
 @media only screen and (min-width: 60.063em) and (max-width: 110em) {
-  /* line 165, scss/main.scss */
+  /* line 166, scss/main.scss */
   #container3 {
     float: none;
     width: 90%;
@@ -368,7 +468,7 @@ p:first-child, .toc h3 {
     margin: 50px auto;
   }
 
-  /* line 172, scss/main.scss */
+  /* line 173, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -377,7 +477,7 @@ p:first-child, .toc h3 {
     right: 0px;
   }
 
-  /* line 180, scss/main.scss */
+  /* line 181, scss/main.scss */
   #container1 {
     float: left;
     width: 100%;
@@ -385,7 +485,7 @@ p:first-child, .toc h3 {
     right: 50%;
   }
 
-  /* line 187, scss/main.scss */
+  /* line 188, scss/main.scss */
   #col1 {
     float: left;
     width: 46%;
@@ -394,7 +494,7 @@ p:first-child, .toc h3 {
     overflow: hidden;
   }
 
-  /* line 195, scss/main.scss */
+  /* line 196, scss/main.scss */
   #col2 {
     float: left;
     width: 46%;
@@ -403,7 +503,7 @@ p:first-child, .toc h3 {
     overflow: hidden;
   }
 
-  /* line 203, scss/main.scss */
+  /* line 204, scss/main.scss */
   #col3 {
     display: none;
   }

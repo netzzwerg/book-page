@@ -1,0 +1,93 @@
+/**
+ * Blackboard theme
+ *
+ * Adapted from Domenico Carbotta's TextMate theme of the same name
+ *
+ * @author Domenico Carbotta
+ * @author Craig Campbell
+ * @version 1.0.2
+ */
+
+pre {
+
+
+    word-wrap: break-word;
+    margin: 0px;
+    padding: 10px;
+    color: #fff;
+    @include background-image(radial-gradient(color-stops(#2A2E30, #111414), center center));
+    margin-bottom: 20px;
+    font-family: 'Monaco', courier, monospace;
+    box-shadow: 0 1px 2px #D1D1D1;
+    border-radius: 3px 0 0 3px;
+    overflow-y: hidden;
+    display: block;
+    margin: 35px 0;
+    padding: 0 0 20px 30px;
+    line-height: 100%; 
+
+    /* Browser specific (not valid) styles to make codeformatted text wrap */        
+
+    code {
+     white-space: code-wrap;       /* css-3 */
+     white-space: -moz-code-wrap;  /* Mozilla, since 1999 */
+     white-space: -code-wrap;      /* Opera 4-6 */
+     white-space: -o-code-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    code + p {
+        margin-top: 1.5em;
+    }
+
+    .comment {
+        color: #75715E;
+    }
+
+    .constant {
+        color: #AE81FF;
+    }
+
+    .storage {
+        color: #66D9EF;
+    }
+
+    .string, .comment.docstring {
+        color: #E6DB74;
+    }
+
+    .support.tag {
+        color: #fff;
+    }
+
+    .keyword {
+        /* @todo some keywords use this light blue, most use the pink */
+        /*color: #66D9EF;*/
+        color: #F92672;
+    }
+
+    .selector {
+        color: #F92672;
+    }
+
+    .inherited-class {
+        font-style: italic;
+    }
+
+    .operator, pre .support.tag-name , pre .entity.tag {
+        color: #F92672;
+    }
+
+    .entity, pre .support.attribute, pre .entity.attribute {
+        color: #A6E22E;
+    }
+
+    .css-property, pre .storage.function {
+        font-style: italic;
+    }
+
+    .variable.global, pre .variable.class, pre .variable.instance {
+        color: #A6E22E;
+    }
+
+}

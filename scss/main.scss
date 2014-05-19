@@ -1,9 +1,10 @@
 @charset "UTF-8"; 
 
+@import "compass";
+
 @import "settings";
 @import "components";
 @import "base";
-
 
 // useful HTML classes
 .left { float: left !important; }

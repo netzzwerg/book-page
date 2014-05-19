@@ -51,7 +51,7 @@
 
 				<p>&nbsp;</p>
 
-				<h2>Design Pattern Categorization</h2>
+				<h2>Design Pattern Categor-ization</h2>
 
 				<p>In my early experiences of learning about design patterns, I personally found the following table a very useful reminder of what a number of patterns has to offer - it covers the 23 Design Patterns mentioned by the GoF. The original table was summarized by Elyse Nielsen back in 2004 and I've modified it where necessary to suit our discussion in this section of the book.</p>
 
@@ -63,7 +63,7 @@
 
 				<p>The most common approach to achieving this is by defining a JavaScript function where we then create an object using the <code>new</code> keyword. <code>this</code> can be used to help define new properties and methods for the object as follows:</p>
 
-				<code>
+				<pre><code data-language="javascript">
 // A car "class"
 function Car( model ) {
  
@@ -75,16 +75,16 @@ function Car( model ) {
 	return this.model + " " + this.year;
   };
  
-}</code>
+}</code></pre>
 
 				<p>We can then instantiate the object using the Car constructor we defined above like this:</p>
 
-				<code>
+				<pre><code data-language="javascript">
 var myCar = new Car("ford");
- 
+
 myCar.year = "2010";
 
-console.log( myCar.getInfo() );</code>
+console.log( myCar.getInfo() );</code></pre>
 
 				<p>For more ways to define "classes" using JavaScript, see Stoyan Stefanov's useful <a href="http://www.phpied.com/3-ways-to-define-a-javascript-class/">post</a> on them.</p>
 
@@ -330,6 +330,9 @@ console.log( myCar.getInfo() );</code>
 
 	<script src="lib/zepto.js"></script>
 	<script src="lib/underscore.js"></script>
+	<script src="lib/rainbow.min.js"></script>
+    <script src="lib/language/generic.js"></script>
+    <script src="lib/language/javascript.js"></script>
 	<script src="book.js"></script>
 
 </body>
