@@ -52,6 +52,7 @@ h1, h2, h3 , h4, h5 {
   clear:left;
   overflow:hidden;
   border: 10px solid #ddd;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
   background-color: #1e1e1e;
 }
 
@@ -140,9 +141,11 @@ h1, h2, h3 , h4, h5 {
 
   #container3 {
     clear:left;
-    width: 90% !important;
+    width: 100% !important;
     overflow:hidden;
-    margin: 50px auto;
+    margin: 20px 0;
+    border-left: 0px;
+    border-right: 0px;
   }
 
   #container2 {
@@ -155,9 +158,24 @@ h1, h2, h3 , h4, h5 {
 
   #container1 {
     float:left;
-    width: 99.9% !important;
+    width: 100% !important;
     position:relative;
     right: 0px !important;
+  }
+
+  article pre {
+    margin: 0px !important;
+    padding: 10px 0 25px 25px !important;
+    border-radius: 0px !important;
+  }
+
+  article header > h1 {
+    font-size: 6.4rem !important;
+
+  }
+
+  figure {
+    margin: 0 5px 2em !important;
   }
 
 }
