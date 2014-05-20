@@ -1,4 +1,8 @@
 book-page
 =========
 
-html5 book page layout
+html5 responsive book page layout
+
+
+
+
