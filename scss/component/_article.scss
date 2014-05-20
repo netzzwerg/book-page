@@ -1,7 +1,7 @@
 article {
 
-	p, h1, h2, h3, h4, h5, figcaption {
-		padding: 0 2.4rem;
+	p, h1, h2, h3, h4, h5, figcaption, ul, ol {
+		padding: 0 4.4rem;
 		word-wrap: break-word;
 	}
 
@@ -12,14 +12,14 @@ article {
 
 	h1 {
 		font-weight: 900;
-    	line-height: 1.1em;
+		line-height: 1.1em;
 	}
 
 	p + p {
-  		text-indent: 2em;
+		text-indent: 2em;
 	}
 
 	header + p {
 		font-size: 1.8rem;
-	} 
+	}
 }

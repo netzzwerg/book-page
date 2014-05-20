@@ -85,8 +85,8 @@ h6 {
 }
 
 /* line 3, scss/component/_article.scss */
-article p, article h1, article h2, article h3, article h4, article h5, article figcaption {
-  padding: 0 2.4rem;
+article p, article h1, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol {
+  padding: 0 4.4rem;
   word-wrap: break-word;
 }
 /* line 8, scss/component/_article.scss */
@@ -106,6 +106,15 @@ article p + p {
 /* line 22, scss/component/_article.scss */
 article header + p {
   font-size: 1.8rem;
+}
+
+/* line 3, scss/component/_toc.scss */
+.toc h1, .toc h2, .toc h3, .toc h4, .toc h5 {
+  padding: 0 4.4rem;
+}
+/* line 8, scss/component/_toc.scss */
+.toc > ol, .toc > ul {
+  padding: 0 6.8rem;
 }
 
 /* line 1, scss/component/_figure.scss */
@@ -372,27 +381,27 @@ p:first-child, .toc h3 {
 /* line 76, scss/main.scss */
 #col1 {
   float: left;
-  width: 29.33%;
+  width: 33%;
   position: relative;
-  left: 68.67%;
+  left: 67%;
   overflow: hidden;
 }
 
 /* line 84, scss/main.scss */
 #col2 {
   float: left;
-  width: 29.33%;
+  width: 33%;
   position: relative;
-  left: 72.67%;
+  left: 67%;
   overflow: hidden;
 }
 
 /* line 92, scss/main.scss */
 #col3 {
   float: left;
-  width: 29.33%;
+  width: 33%;
   position: relative;
-  left: 76.67%;
+  left: 67%;
   overflow: hidden;
 }
 

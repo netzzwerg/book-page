@@ -66,15 +66,15 @@
 				<pre><code data-language="javascript">
 // A car "class"
 function Car( model ) {
- 
+
   this.model = model;
   this.color = "silver";
   this.year  = "2012";
- 
+
   this.getInfo = function () {
 	return this.model + " " + this.year;
   };
- 
+
 }</code></pre>
 
 				<p>We can then instantiate the object using the Car constructor we defined above like this:</p>
@@ -257,82 +257,79 @@ console.log( myCar.getInfo() );</code></pre>
 
 				<p>A Mediator is an object that coordinates interactions (logic and behavior) between multiple objects. It makes decisions on when to call which objects, based on the actions (or inaction) of other objects and input.</p>
 
-				
 			</article>
 
 			<div class="toc" id="col3">
 				<h3>Table of Contents</h3>
-<ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#whatisapattern">What is a Pattern?</a></li>
-        <li><a href="#patternity">"Pattern"-ity Testing, Proto-Patterns &amp; The Rule Of Three</a></li>
-        <li><a href="#designpatternstructure">The Structure Of A Design Pattern</a></li>
-        <li><a href="#writingdesignpatterns">Writing Design Patterns</a></li>
-        <li><a href="#antipatterns">Anti-Patterns</a></li>
-        <li><a href="#categoriesofdesignpatterns">Categories Of Design Pattern</a></li>
-        <li><a href="#summarytabledesignpatterns">Summary Table Of Design Pattern Categorization</a></li>
-        <li><a href="#designpatternsjavascript">JavaScript Design Patterns
-          </a>
-          <ul>
-            <li class="subitem"><a href="#constructorpatternjavascript">Constructor Pattern</a></li>
-            <li class="subitem"><a href="#modulepatternjavascript">Module Pattern</a></li>
-            <li class="subitem"><a href="#revealingmodulepatternjavascript">Revealing Module Pattern</a></li>
-            <li class="subitem"><a href="#singletonpatternjavascript">Singleton Pattern</a></li>
-            <li class="subitem"><a href="#observerpatternjavascript">Observer Pattern</a></li>
-             <li class="subitem"><a href="#mediatorpatternjavascript">Mediator Pattern</a></li>
-            <li class="subitem"><a href="#prototypepatternjavascript">Prototype Pattern</a></li>
-            <li class="subitem"><a href="#commandpatternjavascript">Command Pattern</a></li>
-            <li class="subitem"><a href="#facadepatternjavascript">Facade Pattern</a></li>
-            <li class="subitem"><a href="#factorypatternjavascript">Factory Pattern</a></li>
-            <li class="subitem"><a href="#mixinpatternjavascript">Mixin Pattern</a>
-            </li><li class="subitem"><a href="#decoratorpatternjavascript">Decorator Pattern</a></li>
-            <li class="subitem"><a href="#detailflyweight">Flyweight Pattern</a>
-        </li></ul>
-      </li>
-         <li><a href="#detailmvcmvp">JavaScript MV* Patterns</a>
-        <ul>
-          <li class="subitem"><a href="#detailmvc">MVC Pattern</a>
-          </li><li class="subitem"><a href="#detailmvp">MVP Pattern</a>
-          </li><li class="subitem"><a href="#detailmvvm">MVVM Pattern</a>
-        </li></ul>
-      </li>
-        <li><a href="#modularjavascript">Modern Modular JavaScript Design Patterns</a>
-        <ul>
-          <li class="subitem"><a href="#detailamd">AMD</a>
-          </li><li class="subitem"><a href="#detailcommonjs">CommonJS</a>
-            </li><li class="subitem"><a href="#detailharmony">ES Harmony</a>
-        </li></ul>
-        </li>
-
-        <li><a href="#designpatternsjquery">Design Patterns In jQuery</a>
-        <ul>
-          <li class="subitem"><a href="#compositepatternjquery">Composite Pattern</a></li>
-          <li class="subitem"><a href="#wrapperpatternjquery">Adapter Pattern</a></li>
-          <li class="subitem"><a href="#facadepatternjquery">Facade Pattern</a></li>
-          <li class="subitem"><a href="#observerpatternjquery">Observer Pattern</a></li>
-          <li class="subitem"><a href="#iteratorpatternjquery">Iterator Pattern</a></li>
-          <li class="subitem"><a href="#lazyinitialisationjquery">Lazy Initialization Pattern</a></li>
-          <li class="subitem"><a href="#proxypatternjquery">Proxy Pattern</a></li>
-          <li class="subitem"><a href="#builderpatternjquery">Builder Pattern</a></li>
-        </ul>
-      </li>
-
-        <li><a href="#jquerypluginpatterns">jQuery Plugin Design Patterns</a></li>
-        <li><a href="#detailnamespacing">JavaScript Namespacing Patterns</a></li>
-        <li><a href="#conclusions">Conclusions</a></li>
-        <li><a href="#references">References</a></li>
-      </ul>
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#whatisapattern">What is a Pattern?</a></li>
+					<li><a href="#patternity">"Pattern"-ity Testing, Proto-Patterns &amp; The Rule Of Three</a></li>
+					<li><a href="#designpatternstructure">The Structure Of A Design Pattern</a></li>
+					<li><a href="#writingdesignpatterns">Writing Design Patterns</a></li>
+					<li><a href="#antipatterns">Anti-Patterns</a></li>
+					<li><a href="#categoriesofdesignpatterns">Categories Of Design Pattern</a></li>
+					<li><a href="#summarytabledesignpatterns">Summary Table Of Design Pattern Categorization</a></li>
+					<li><a href="#designpatternsjavascript">JavaScript Design Patterns</a>
+						<ul>
+						<li class="subitem"><a href="#constructorpatternjavascript">Constructor Pattern</a></li>
+						<li class="subitem"><a href="#modulepatternjavascript">Module Pattern</a></li>
+						<li class="subitem"><a href="#revealingmodulepatternjavascript">Revealing Module Pattern</a></li>
+						<li class="subitem"><a href="#singletonpatternjavascript">Singleton Pattern</a></li>
+						<li class="subitem"><a href="#observerpatternjavascript">Observer Pattern</a></li>
+						<li class="subitem"><a href="#mediatorpatternjavascript">Mediator Pattern</a></li>
+						<li class="subitem"><a href="#prototypepatternjavascript">Prototype Pattern</a></li>
+						<li class="subitem"><a href="#commandpatternjavascript">Command Pattern</a></li>
+						<li class="subitem"><a href="#facadepatternjavascript">Facade Pattern</a></li>
+						<li class="subitem"><a href="#factorypatternjavascript">Factory Pattern</a></li>
+						<li class="subitem"><a href="#mixinpatternjavascript">Mixin Pattern</a></li>
+						<li class="subitem"><a href="#decoratorpatternjavascript">Decorator Pattern</a></li>
+						<li class="subitem"><a href="#detailflyweight">Flyweight Pattern</a></li>
+						</ul>
+					</li>
+					<li><a href="#detailmvcmvp">JavaScript MV* Patterns</a>
+						<ul>
+							<li class="subitem"><a href="#detailmvc">MVC Pattern</a></li>
+							<li class="subitem"><a href="#detailmvp">MVP Pattern</a></li>
+							<li class="subitem"><a href="#detailmvvm">MVVM Pattern</a></li>
+						</ul>
+					</li>
+					<li><a href="#modularjavascript">Modern Modular JavaScript Design Patterns</a>
+						<ul>
+							<li class="subitem"><a href="#detailamd">AMD</a>
+							</li><li class="subitem"><a href="#detailcommonjs">CommonJS</a>
+							</li><li class="subitem"><a href="#detailharmony">ES Harmony</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#designpatternsjquery">Design Patterns In jQuery</a>
+						<ul>
+							<li class="subitem"><a href="#compositepatternjquery">Composite Pattern</a></li>
+							<li class="subitem"><a href="#wrapperpatternjquery">Adapter Pattern</a></li>
+							<li class="subitem"><a href="#facadepatternjquery">Facade Pattern</a></li>
+							<li class="subitem"><a href="#observerpatternjquery">Observer Pattern</a></li>
+							<li class="subitem"><a href="#iteratorpatternjquery">Iterator Pattern</a></li>
+							<li class="subitem"><a href="#lazyinitialisationjquery">Lazy Initialization Pattern</a></li>
+							<li class="subitem"><a href="#proxypatternjquery">Proxy Pattern</a></li>
+							<li class="subitem"><a href="#builderpatternjquery">Builder Pattern</a></li>
+						</ul>
+					</li>
+					<li><a href="#jquerypluginpatterns">jQuery Plugin Design Patterns</a></li>
+					<li><a href="#detailnamespacing">JavaScript Namespacing Patterns</a></li>
+					<li><a href="#conclusions">Conclusions</a></li>
+					<li><a href="#references">References</a></li>
+				</ul>
 			</div>
 
+			</div>
 		</div>
 	</div>
-</div>
 
 	<script src="lib/zepto.js"></script>
 	<script src="lib/underscore.js"></script>
 	<script src="lib/rainbow.min.js"></script>
-    <script src="lib/language/generic.js"></script>
-    <script src="lib/language/javascript.js"></script>
+	<script src="lib/language/generic.js"></script>
+	<script src="lib/language/javascript.js"></script>
 	<script src="book.js"></script>
 
 </body>
