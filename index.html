@@ -61,6 +61,11 @@
 
 				<p>Keep in mind that there will be patterns in this table that reference the concept of "classes". JavaScript is a class-less language, however classes can be simulated using functions.</p>
 
+				<figure class="figure">
+					<img src="img/02.png" width="100%"></img>
+					<figcaption>Yost No. 4 Typewriter</figcaption>
+				</figure>
+
 				<p>The most common approach to achieving this is by defining a JavaScript function where we then create an object using the <code>new</code> keyword. <code>this</code> can be used to help define new properties and methods for the object as follows:</p>
 
 				<pre><code data-language="javascript">
@@ -95,41 +100,48 @@ console.log( myCar.getInfo() );</code></pre>
 				<p>Let us now proceed to review the table.</p>
 
 				<table border="0" cellpadding="1" cellspacing="1" >
+					<tbody>
+					<tr>
+					<th colspan="4"><strong><b>Creational </b></strong></th>
+					<th colspan="4">Based on the concept of creating an object.</th>
+					</tr>
+					<tr>
+					<td colspan="8"><em><strong>Class </strong></em></td>
+					</tr>
+					<tr>
+					<td colspan="5"><em>Factory Method </em></td>
+					<td colspan="3">This makes an instance of several derived classes based on interfaced data or events.</td>
+					</tr>
+					<tr>
+					<td colspan="8"><em><strong>Object</strong></em></td>
+					</tr>
+					<tr>
+					<td colspan="5"><em>Abstract Factory </em></td>
+					<td colspan="3">Creates an instance of several families of classes without detailing concrete classes. </td>
+					</tr>
+					<tr>
+					<td colspan="5"><em>Builder</em></td>
+					<td colspan="3">Separates object construction from its representation, always creates the same type of object. </td>
+					</tr>
+					<tr>
+					<td colspan="5"><em>Prototype</em></td>
+					<td colspan="3">A fully initialized instance used for copying or cloning. </td>
+					</tr>
+					<tr>
+					<td colspan="5"><em>Singleton</em></td>
+					<td colspan="3">A class with only a single instance with global access points. </td>
+					</tr>
+					</tbody>
+				</table>
+
+				<table border="0" cellpadding="1" cellspacing="1" >
 				<tbody>
+
 				<tr>
-				<td colspan="4"><strong><b>Creational </b></strong></td>
-				<td colspan="4">Based on the concept of creating an object.</td>
+				<th colspan="4"><strong><b>Structural </b> </strong></th>
+				<th colspan="4">Based on the idea of building blocks of objects </th>
 				</tr>
-				<tr>
-				<td colspan="8"><em><strong>Class </strong></em></td>
-				</tr>
-				<tr>
-				<td colspan="5"><em>Factory Method </em></td>
-				<td colspan="3">This makes an instance of several derived classes based on interfaced data or events.</td>
-				</tr>
-				<tr>
-				<td colspan="8"><em><strong>Object</strong></em></td>
-				</tr>
-				<tr>
-				<td colspan="5"><em>Abstract Factory </em></td>
-				<td colspan="3">Creates an instance of several families of classes without detailing concrete classes. </td>
-				</tr>
-				<tr>
-				<td colspan="5"><em>Builder</em></td>
-				<td colspan="3">Separates object construction from its representation, always creates the same type of object. </td>
-				</tr>
-				<tr>
-				<td colspan="5"><em>Prototype</em></td>
-				<td colspan="3">A fully initialized instance used for copying or cloning. </td>
-				</tr>
-				<tr>
-				<td colspan="5"><em>Singleton</em></td>
-				<td colspan="3">A class with only a single instance with global access points. </td>
-				</tr>
-				<tr>
-				<td colspan="4"><strong><b>Structural </b> </strong></td>
-				<td colspan="4">Based on the idea of building blocks of objects </td>
-				</tr>
+
 				<tr>
 				<td colspan="8"><em><strong>Class </strong></em></td>
 				</tr>
@@ -168,9 +180,15 @@ console.log( myCar.getInfo() );</code></pre>
 				<td colspan="5"><em>Proxy</em></td>
 				<td colspan="3"> A place holder object representing the true object </td>
 				</tr>
+
+					</tbody>
+				</table>
+
+				<table border="0" cellpadding="1" cellspacing="1" >
+				<tbody>
 				<tr>
-				<td colspan="4"><strong><b>Behavioral </b></strong></td>
-				<td colspan="4">Based on the way objects play and work together.</td>
+				<th colspan="4"><strong><b>Behavioral </b></strong></th>
+				<th colspan="4">Based on the way objects play and work together.</th>
 				</tr>
 				<tr>
 				<td colspan="8"><em><strong>Class </strong></em></td>
@@ -232,11 +250,6 @@ console.log( myCar.getInfo() );</code></pre>
 				<p>In the section on the Observer pattern, we were introduced to a way of channeling multiple event sources through a single object. This is also known as Publish/Subscribe or Event Aggregation. It's common for developers to think of Mediators when faced with this problem, so let's explore how they differ.</p>
 
 				<p>The dictionary refers to a mediator as <i>a neutral party that assists in negotiations and conflict resolution</i>. In our world, a mediator is a behavioral design pattern that allows us to expose a unified interface through which the different parts of a system may communicate.</p>
-
-				<figure class="figure">
-					<img src="img/02.png" width="100%"></img>
-					<figcaption>Yost No. 4 Typewriter</figcaption>
-				</figure>
 
 				<p>If it appears a system has too many direct relationships between components, it may be time to have a central point of control that components communicate through instead. The Mediator promotes loose coupling by ensuring that instead of components referring to each other explicitly, their interaction is handled through this central point. This can help us decouple systems and improve the potential for component reusability.</p>
 

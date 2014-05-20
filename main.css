@@ -85,7 +85,7 @@ h6 {
 }
 
 /* line 3, scss/component/_article.scss */
-article p, article h1, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol, article table {
+article p, article h1, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol {
   padding: 0 4.4rem;
   word-wrap: break-word;
 }
@@ -303,6 +303,147 @@ pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
   color: #A6E22E;
 }
 
+/* line 1, scss/component/_table.scss */
+table {
+  background: none repeat scroll 0 0 #EAEBEC;
+  border-radius: 3px 3px 3px 3px;
+  color: #666666;
+  font-size: 12px;
+  width: auto;
+  overflow-y: hidden;
+  display: block;
+  margin: 2rem 0 2rem 4.4rem;
+  border-spacing: 0px;
+}
+
+/* line 13, scss/component/_table.scss */
+td {
+  vertical-align: text-top;
+  padding: 0.3em 0.6em;
+}
+
+/* line 18, scss/component/_table.scss */
+table.framed, table.framed-hr {
+  border-collapse: collapse;
+}
+
+/* line 22, scss/component/_table.scss */
+table.framed td {
+  border: thin solid #DDDDDD;
+}
+
+/* line 26, scss/component/_table.scss */
+table.framed-hr td {
+  border-bottom: thin solid #DDDDDD;
+}
+
+/* line 30, scss/component/_table.scss */
+table.framed td.right, table.framed-hr td.right {
+  text-align: right;
+}
+
+/* line 34, scss/component/_table.scss */
+table.framed tr.doubleline, table.framed-hr tr.doubleline {
+  border-bottom: medium double;
+}
+
+/* line 38, scss/component/_table.scss */
+table th {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(100%, #ebebeb));
+  background-image: -webkit-linear-gradient(center top, #ededed, #ebebeb);
+  background-image: -moz-linear-gradient(center top, #ededed, #ebebeb);
+  background-image: -o-linear-gradient(center top, #ededed, #ebebeb);
+  background-image: linear-gradient(center top, #ededed, #ebebeb);
+  border-bottom: 1px solid #E0E0E0;
+  padding: 21px 25px 22px;
+}
+
+/* line 44, scss/component/_table.scss */
+table th:first-child {
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* line 49, scss/component/_table.scss */
+table tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+
+/* line 53, scss/component/_table.scss */
+table tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+
+/* line 57, scss/component/_table.scss */
+table tr {
+  padding-left: 20px;
+  text-align: center;
+}
+
+/* line 62, scss/component/_table.scss */
+table tr td:first-child {
+  border-left: 0 none;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* line 68, scss/component/_table.scss */
+table tr td {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #fafafa));
+  background-image: -webkit-linear-gradient(center top, #fbfbfb, #fafafa);
+  background-image: -moz-linear-gradient(center top, #fbfbfb, #fafafa);
+  background-image: -o-linear-gradient(center top, #fbfbfb, #fafafa);
+  background-image: linear-gradient(center top, #fbfbfb, #fafafa);
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  border-top: 1px solid #FFFFFF;
+  padding: 18px;
+}
+
+/* line 76, scss/component/_table.scss */
+table tr.even td {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #f6f6f6));
+  background-image: -webkit-linear-gradient(center top, #f8f8f8, #f6f6f6);
+  background-image: -moz-linear-gradient(center top, #f8f8f8, #f6f6f6);
+  background-image: -o-linear-gradient(center top, #f8f8f8, #f6f6f6);
+  background-image: linear-gradient(center top, #f8f8f8, #f6f6f6);
+}
+
+/* line 80, scss/component/_table.scss */
+table tr:last-child td {
+  border-bottom: 0 none;
+}
+
+/* line 84, scss/component/_table.scss */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+/* line 88, scss/component/_table.scss */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+/* line 92, scss/component/_table.scss */
+table tr:hover td {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #f0f0f0));
+  background-image: -webkit-linear-gradient(center top, #f2f2f2, #f0f0f0);
+  background-image: -moz-linear-gradient(center top, #f2f2f2, #f0f0f0);
+  background-image: -o-linear-gradient(center top, #f2f2f2, #f0f0f0);
+  background-image: linear-gradient(center top, #f2f2f2, #f0f0f0);
+}
+
+/* line 96, scss/component/_table.scss */
+.table-heading {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+/* line 101, scss/component/_table.scss */
+.table-text {
+  color: #6F6F6F;
+}
+
 @media (min-width: 40rem) {
   /* line 2, scss/base/_grid.scss */
   .column {
@@ -414,19 +555,19 @@ h1, h2, h3, h4, h5 {
   margin: 50px auto;
   clear: left;
   overflow: hidden;
-  border: 10px solid #ddd;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  border: 5px solid #1e1e1e;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
   background-color: #1e1e1e;
 }
 
-/* line 59, scss/main.scss */
+/* line 60, scss/main.scss */
 #container2 {
   clear: left;
   float: left;
   width: 99.9%;
   position: relative;
   right: 33.333%;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
 }
 
@@ -436,9 +577,9 @@ h1, h2, h3, h4, h5 {
   width: 99.9%;
   position: relative;
   right: 33.33%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
   padding: 0 0 10rem 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* line 79, scss/main.scss */
