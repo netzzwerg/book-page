@@ -1,118 +1,118 @@
 @charset "UTF-8";
 @media (min-width: 40rem) {
-  /* line 2, scss/base/_grid.scss */
+  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column {
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* line 7, scss/base/_grid.scss */
+  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.full {
     width: 100%;
   }
 
-  /* line 8, scss/base/_grid.scss */
+  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.two-thirds {
     width: 66.7%;
   }
 
-  /* line 9, scss/base/_grid.scss */
+  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.half {
     width: 50%;
   }
 
-  /* line 10, scss/base/_grid.scss */
+  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.third {
     width: 33.3%;
   }
 
-  /* line 11, scss/base/_grid.scss */
+  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.fourth {
     width: 24.95%;
   }
 
-  /* line 12, scss/base/_grid.scss */
+  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.flow-opposite {
     float: right;
   }
 }
-/* line 1, scss/component/_typography.scss */
+/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 5, scss/component/_typography.scss */
+/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 body {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 9, scss/component/_typography.scss */
+/* line 9, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h1 {
   font-size: 44px;
   font-size: 4.4rem;
 }
 
-/* line 13, scss/component/_typography.scss */
+/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h2 {
   font-size: 37px;
   font-size: 3.7rem;
 }
 
-/* line 17, scss/component/_typography.scss */
+/* line 17, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h3 {
   font-size: 27px;
   font-size: 2.7rem;
 }
 
-/* line 21, scss/component/_typography.scss */
+/* line 21, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h4 {
   font-size: 23px;
   font-size: 2.3rem;
 }
 
-/* line 25, scss/component/_typography.scss */
+/* line 25, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 29, scss/component/_typography.scss */
+/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
 h6 {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 3, scss/component/_article.scss */
+/* line 3, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
 article p, article h1, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol {
   padding: 0 4.4rem;
   word-wrap: break-word;
 }
-/* line 8, scss/component/_article.scss */
+/* line 8, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
 article p {
   text-align: justify;
   line-height: 1.5em;
 }
-/* line 13, scss/component/_article.scss */
+/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
 article h1 {
   font-weight: 900;
   line-height: 1.1em;
 }
-/* line 18, scss/component/_article.scss */
+/* line 18, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
 article p + p {
   text-indent: 2em;
 }
-/* line 22, scss/component/_article.scss */
+/* line 22, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
 article header + p {
   font-size: 1.8rem;
 }
 
-/* line 3, scss/component/_toc.scss */
+/* line 3, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc h1, .toc h2, .toc h3, .toc h4, .toc h5 {
   padding: 0 4.4rem;
 }
-/* line 8, scss/component/_toc.scss */
+/* line 8, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc h3.main-title {
   text-align: center;
   text-transform: uppercase;
@@ -124,83 +124,84 @@ article header + p {
   line-height: 6.52rem;
   color: #FFFFFF;
 }
-/* line 20, scss/component/_toc.scss */
+/* line 20, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc ul {
   padding-left: 2rem;
 }
-/* line 24, scss/component/_toc.scss */
+/* line 24, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc > ol, .toc > ul {
   padding: 0 2rem 0 6.8rem;
   line-height: 3.52rem;
 }
-/* line 29, scss/component/_toc.scss */
+/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc a {
   color: #AAAAAA;
 }
-/* line 33, scss/component/_toc.scss */
+/* line 33, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc ul li > a {
   background-color: #1e1e1e;
   padding: 0 5px 0 0px;
 }
-/* line 38, scss/component/_toc.scss */
+/* line 38, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc .post-date {
   float: right;
   background-color: #1e1e1e;
   padding: 0 0px 0 5px;
 }
-/* line 44, scss/component/_toc.scss */
+/* line 44, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc li.toc-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 0 3rem 0;
 }
-/* line 49, scss/component/_toc.scss */
+/* line 49, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc .toc-section:before {
   content: '';
 }
-/* line 53, scss/component/_toc.scss */
+/* line 53, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc ul li:before {
   float: left;
   width: 0;
   white-space: nowrap;
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
-/* line 63, scss/component/_toc.scss */
+/* line 63, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc li.toc-section + li.toc-section {
   padding: 2rem 0 2rem 0;
 }
-/* line 67, scss/component/_toc.scss */
+/* line 67, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
 .toc li.toc-section + li {
   padding: 2rem 0 0 0;
 }
 
-/* line 1, scss/component/_figure.scss */
+/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
 body {
   counter-reset: figures;
 }
 
-/* line 5, scss/component/_figure.scss */
+/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
 .figure {
   background: #fff;
-  margin: 0 auto 1em;
+  margin: 0 2px 1em;
 }
 
-/* line 10, scss/component/_figure.scss */
+/* line 10, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
 .figure img {
   margin: 0 auto;
   display: block;
   max-width: 100%;
 }
 
-/* line 16, scss/component/_figure.scss */
+/* line 16, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
 .figure figcaption {
   font-size: 0.8em;
   text-transform: uppercase;
   color: #666666;
-  padding: .5em;
+  padding: 0 4.4rem;
+  text-align: right;
   counter-increment: figures;
 }
 
-/* line 24, scss/component/_figure.scss */
+/* line 25, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
 .figure figcaption:before {
   content: "Fig. " counter(figures) " - ";
 }
@@ -214,7 +215,7 @@ body {
  * @author Craig Campbell
  * @version 1.0.2
  */
-/* line 11, scss/component/_code.scss */
+/* line 11, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre {
   word-wrap: break-word;
   margin: 0px;
@@ -236,7 +237,7 @@ pre {
   line-height: 100%;
   /* Browser specific (not valid) styles to make codeformatted text wrap */
 }
-/* line 31, scss/component/_code.scss */
+/* line 31, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre code {
   white-space: code-wrap;
   /* css-3 */
@@ -249,95 +250,95 @@ pre code {
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */
 }
-/* line 39, scss/component/_code.scss */
+/* line 39, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre code + p {
   margin-top: 1.5em;
 }
-/* line 43, scss/component/_code.scss */
+/* line 43, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .comment {
   color: #75715E;
 }
-/* line 47, scss/component/_code.scss */
+/* line 47, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .constant {
   color: #AE81FF;
 }
-/* line 51, scss/component/_code.scss */
+/* line 51, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .storage {
   color: #66D9EF;
 }
-/* line 55, scss/component/_code.scss */
+/* line 55, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .string, pre .comment.docstring {
   color: #E6DB74;
 }
-/* line 59, scss/component/_code.scss */
+/* line 59, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .support.tag {
   color: #fff;
 }
-/* line 63, scss/component/_code.scss */
+/* line 63, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .keyword {
   /* @todo some keywords use this light blue, most use the pink */
   /*color: #66D9EF;*/
   color: #F92672;
 }
-/* line 69, scss/component/_code.scss */
+/* line 69, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .selector {
   color: #F92672;
 }
-/* line 73, scss/component/_code.scss */
+/* line 73, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .inherited-class {
   font-style: italic;
 }
-/* line 77, scss/component/_code.scss */
+/* line 77, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .operator, pre pre .support.tag-name, pre pre .entity.tag {
   color: #F92672;
 }
-/* line 81, scss/component/_code.scss */
+/* line 81, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .entity, pre pre .support.attribute, pre pre .entity.attribute {
   color: #A6E22E;
 }
-/* line 85, scss/component/_code.scss */
+/* line 85, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .css-property, pre pre .storage.function {
   font-style: italic;
 }
-/* line 89, scss/component/_code.scss */
+/* line 89, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
 pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
   color: #A6E22E;
 }
 
 @media (min-width: 40rem) {
-  /* line 2, scss/base/_grid.scss */
+  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column {
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* line 7, scss/base/_grid.scss */
+  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.full {
     width: 100%;
   }
 
-  /* line 8, scss/base/_grid.scss */
+  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.two-thirds {
     width: 66.7%;
   }
 
-  /* line 9, scss/base/_grid.scss */
+  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.half {
     width: 50%;
   }
 
-  /* line 10, scss/base/_grid.scss */
+  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.third {
     width: 33.3%;
   }
 
-  /* line 11, scss/base/_grid.scss */
+  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.fourth {
     width: 24.95%;
   }
 
-  /* line 12, scss/base/_grid.scss */
+  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
   .column.flow-opposite {
     float: right;
   }
@@ -356,12 +357,12 @@ pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
 .clearfix {
   *zoom: 1;
 }
-/* line 40, scss/base/_mixin.scss */
+/* line 40, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 41, scss/base/_mixin.scss */
+/* line 41, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
 .clearfix:after {
   clear: both;
 }
