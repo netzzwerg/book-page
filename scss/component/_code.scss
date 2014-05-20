@@ -12,8 +12,6 @@ pre {
 
 
     word-wrap: break-word;
-    margin: 0px;
-    padding: 10px;
     color: #fff;
     @include background-image(radial-gradient(color-stops(#2A2E30, #111414), center center));
     margin-bottom: 20px;
@@ -22,7 +20,7 @@ pre {
     border-radius: 3px 0 0 3px;
     overflow-y: hidden;
     display: block;
-    margin: 35px 0;
+    margin: 2rem 0 2rem 4.4rem;
     padding: 0 0 20px 30px;
     line-height: 100%; 
 

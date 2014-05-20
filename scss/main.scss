@@ -57,19 +57,19 @@ h1, h2, h3 , h4, h5 {
 #container2 {
   clear:left;
   float:left;
-  width:100%;
+  width:99.9%;
   position:relative;
   right:33.333%;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
 }
 
 #container1 {
   float:left;
-  width:100%;
+  width:99.9%;
   position:relative;
   right:33.33%;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
 }
 
@@ -153,7 +153,7 @@ h1, h2, h3 , h4, h5 {
 
   #container1 {
     float:left;
-    width: 100% !important;
+    width: 99.9% !important;
     position:relative;
     right: 0px !important;
   }
@@ -187,17 +187,17 @@ h1, h2, h3 , h4, h5 {
 
   #col1 {
     float:left;
-    width:46%;
+    width:50%;
     position:relative;
-    left:52%;
+    left:50%;
     overflow:hidden;
   }
 
   #col2 {
     float:left;
-    width:46%;
+    width:50%;
     position:relative;
-    left:56%;
+    left:50%;
     overflow:hidden;
   }
 
