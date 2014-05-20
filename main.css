@@ -113,8 +113,64 @@ article header + p {
   padding: 0 4.4rem;
 }
 /* line 8, scss/component/_toc.scss */
+.toc h3.main-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 6% 11.4% 6% 11.4%;
+  padding: 0 10%;
+  font-size: 6.52rem;
+  line-height: 6.52rem;
+  color: #FFFFFF;
+}
+/* line 20, scss/component/_toc.scss */
+.toc ul {
+  padding-left: 2rem;
+}
+/* line 24, scss/component/_toc.scss */
 .toc > ol, .toc > ul {
-  padding: 0 6.8rem;
+  padding: 0 2rem 0 6.8rem;
+  line-height: 3.52rem;
+}
+/* line 29, scss/component/_toc.scss */
+.toc a {
+  color: #AAAAAA;
+}
+/* line 33, scss/component/_toc.scss */
+.toc ul li > a {
+  background-color: #1e1e1e;
+  padding: 0 5px 0 0px;
+}
+/* line 38, scss/component/_toc.scss */
+.toc .post-date {
+  float: right;
+  background-color: #1e1e1e;
+  padding: 0 0px 0 5px;
+}
+/* line 44, scss/component/_toc.scss */
+.toc li.toc-section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 0 3rem 0;
+}
+/* line 49, scss/component/_toc.scss */
+.toc .toc-section:before {
+  content: '';
+}
+/* line 53, scss/component/_toc.scss */
+.toc ul li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+}
+/* line 63, scss/component/_toc.scss */
+.toc li.toc-section + li.toc-section {
+  padding: 2rem 0 2rem 0;
+}
+/* line 67, scss/component/_toc.scss */
+.toc li.toc-section + li {
+  padding: 2rem 0 0 0;
 }
 
 /* line 1, scss/component/_figure.scss */
@@ -318,7 +374,7 @@ pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
 /* line 16, scss/main.scss */
 body {
   background: #f6f6f6;
-  color: black;
+  color: #3a4145;
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -338,7 +394,7 @@ body {
 /* line 34, scss/main.scss */
 a {
   text-decoration: none;
-  color: black;
+  color: #3a4145;
 }
 
 /* line 39, scss/main.scss */
@@ -346,15 +402,20 @@ p:first-child, .toc h3 {
   padding-top: 20px;
 }
 
+/* line 43, scss/main.scss */
+h1, h2, h3, h4, h5 {
+  color: #000;
+}
+
 /* column layout */
-/* line 45, scss/main.scss */
+/* line 48, scss/main.scss */
 #container3 {
   width: 1740px;
   margin: 50px auto;
   clear: left;
   overflow: hidden;
-  background: #EDE0CE;
   border: 20px solid #EEE;
+  background-color: #1e1e1e;
 }
 
 /* line 57, scss/main.scss */
@@ -364,8 +425,8 @@ p:first-child, .toc h3 {
   width: 100%;
   position: relative;
   right: 33.333%;
-  background: none repeat scroll 0 0 #FFFFFF;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
 }
 
 /* line 67, scss/main.scss */
@@ -374,8 +435,8 @@ p:first-child, .toc h3 {
   width: 100%;
   position: relative;
   right: 33.33%;
-  background: none repeat scroll 0 0 #FFFFFF;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
 }
 
 /* line 76, scss/main.scss */

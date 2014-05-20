@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    @include rem(font-size, 1.6rem);
+	@include rem(font-size, 1.6rem);
 }
 
 h1 {
@@ -29,5 +29,3 @@ h5 {
 h6 {
 	@include rem(font-size, $font-size-h6);
 }
-
-

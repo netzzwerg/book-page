@@ -4,9 +4,68 @@
 		padding: 0 4.4rem;
 	}
 
+	// main headline
+	h3.main-title {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: -2px;
+		margin: 6% 11.4% 6% 11.4%;
+		padding: 0 10%;
+		font-size: 6.52rem;
+		line-height: 6.52rem;
+		color: #FFFFFF;
+	}
+
+	ul {
+		padding-left: 2rem;
+	}
 
 	> ol, > ul {
-		padding: 0 6.8rem;
+		padding: 0 2rem 0 6.8rem;
+		line-height: 3.52rem;
+	}
+
+	a {
+		color: #AAAAAA;
+	}
+
+	ul li > a {
+		background-color: #1e1e1e;
+		padding: 0 5px 0 0px;
+	}
+
+	.post-date {
+		float: right;
+		background-color: #1e1e1e;
+		padding: 0 0px 0 5px;
+	}
+
+	li.toc-section {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 0 0 3rem 0;
+	}
+
+	.toc-section:before {
+		content: '';
+	}
+
+	ul li:before {
+		float: left;
+		width: 0;
+		white-space: nowrap;
+		content:
+			". . . . . . . . . . . . . . . . . . . . "
+			". . . . . . . . . . . . . . . . . . . . "
+			". . . . . . . . . . . . . . . . . . . . "
+	}
+
+	li.toc-section + li.toc-section {
+		padding: 2rem 0 2rem 0;
+	}
+
+	li.toc-section + li {
+		padding: 2rem 0 0 0;
 	}
 
 }

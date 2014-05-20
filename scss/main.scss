@@ -40,18 +40,18 @@ p:first-child, .toc h3 {
   padding-top: 20px;
 }
 
+h1, h2, h3 , h4, h5 {
+  color: #000;
+}
 
 /* column layout */
 #container3 {
   width: 1740px; // 3 x 580px
   margin: 50px auto;
-
   clear:left;
-  //float:left;
-  //width:100%;
   overflow:hidden;
-  background:#EDE0CE;
   border: 20px solid #EEE;
+  background-color: #1e1e1e;
 }
 
 #container2 {
@@ -60,8 +60,8 @@ p:first-child, .toc h3 {
   width:100%;
   position:relative;
   right:33.333%;
-  background: none repeat scroll 0 0 #FFFFFF;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
 }
 
 #container1 {
@@ -69,8 +69,8 @@ p:first-child, .toc h3 {
   width:100%;
   position:relative;
   right:33.33%;
-  background: none repeat scroll 0 0 #FFFFFF;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
 }
 
 #col1 {
@@ -167,7 +167,7 @@ p:first-child, .toc h3 {
     float:none;
     width:90%;
     overflow:hidden;
-  margin: 50px auto;
+    margin: 50px auto;
   }
 
   #container2 {
@@ -205,11 +205,8 @@ p:first-child, .toc h3 {
     display: none;
   }
 
-
 }
 
 @media only screen and (min-width: 111em) {
 
 }
-
-
