@@ -19,6 +19,11 @@
 
 				<p>Remember that not every algorithm, best practice or solution represents what might be considered a complete pattern. There may be a few key ingredients here that are missing and the pattern community is generally wary of something claiming to be one unless it has been heavily vetted. Even if something is presented to us which <strong>appears</strong> to meet the criteria for a pattern, it should not be considered one until it has undergone suitable periods of scrutiny and testing by others.</p>
 
+				<figure class="figure">
+					<img src="svg/sequence-diagram.svg" onerror="this.onerror=null; this.src='img/sequence-diagram.png'">
+					<figcaption>Sequence Diagram with SVG </figcaption>
+				</figure>
+
 				<p>Looking back upon the work by Alexander once more, he claims that a pattern should both be a process and a "thing". This definition is obtuse on purpose as he follows by saying that it is the process which should create the "thing". This is a reason why patterns generally focus on addressing a visually identifiable structure i.e we should be able to visually depict (or draw) a picture representing the structure that placing the pattern into practice results in.</p>
 
 				<figure class="figure">
@@ -250,6 +255,11 @@ console.log( myCar.getInfo() );</code></pre>
 				<p>In the section on the Observer pattern, we were introduced to a way of channeling multiple event sources through a single object. This is also known as Publish/Subscribe or Event Aggregation. It's common for developers to think of Mediators when faced with this problem, so let's explore how they differ.</p>
 
 				<p>The dictionary refers to a mediator as <i>a neutral party that assists in negotiations and conflict resolution</i>. In our world, a mediator is a behavioral design pattern that allows us to expose a unified interface through which the different parts of a system may communicate.</p>
+
+				<figure class="figure">
+					<img src="svg/object-diagram.svg" onerror="this.onerror=null; this.src='img/object-diagram.png'">
+					<figcaption>Object Diagram with SVG </figcaption>
+				</figure>
 
 				<p>If it appears a system has too many direct relationships between components, it may be time to have a central point of control that components communicate through instead. The Mediator promotes loose coupling by ensuring that instead of components referring to each other explicitly, their interaction is handled through this central point. This can help us decouple systems and improve the potential for component reusability.</p>
 
