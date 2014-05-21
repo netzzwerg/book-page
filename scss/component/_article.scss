@@ -1,6 +1,6 @@
 article {
 
-	p, h1, h2, h3, h4, h5, figcaption, ul, ol {
+	p, h2, h3, h4, h5, figcaption, ul, ol, header {
 		padding: 0 4.4rem;
 		word-wrap: break-word;
 	}
@@ -19,7 +19,4 @@ article {
 		text-indent: 2em;
 	}
 
-	header + p {
-		font-size: 1.8rem;
-	}
 }
