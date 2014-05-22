@@ -543,8 +543,12 @@ header h2 span {
 }
 
 /* line 16, scss/main.scss */
+html {
+  background: linear-gradient(315deg, rgba(220, 110, 10, 0.2), rgba(0, 170, 255, 0.1) 80%), url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
+}
+
+/* line 20, scss/main.scss */
 body {
-  background: #ede0ce;
   color: #3a4145;
   padding: 0;
   margin: 0;
@@ -555,32 +559,31 @@ body {
   position: relative;
   cursor: default;
   -webkit-font-smoothing: antialiased;
-  background: url("../img/bg.gif") repeat scroll 0 0 transparent;
 }
 
-/* line 31, scss/main.scss */
+/* line 34, scss/main.scss */
 .header {
   padding: 0 15px;
 }
 
-/* line 35, scss/main.scss */
+/* line 38, scss/main.scss */
 a {
   text-decoration: none;
   color: #3a4145;
 }
 
-/* line 40, scss/main.scss */
+/* line 43, scss/main.scss */
 p:first-child, .toc h3 {
   padding-top: 20px;
 }
 
-/* line 44, scss/main.scss */
+/* line 47, scss/main.scss */
 h1, h2, h3, h4, h5 {
   color: #000;
 }
 
 /* column layout */
-/* line 49, scss/main.scss */
+/* line 52, scss/main.scss */
 #container3 {
   width: 1740px;
   margin: 50px auto;
@@ -592,7 +595,7 @@ h1, h2, h3, h4, h5 {
   background-color: #1e1e1e;
 }
 
-/* line 60, scss/main.scss */
+/* line 63, scss/main.scss */
 #container2 {
   clear: left;
   float: left;
@@ -602,7 +605,7 @@ h1, h2, h3, h4, h5 {
   background-color: white;
 }
 
-/* line 69, scss/main.scss */
+/* line 72, scss/main.scss */
 #container1 {
   float: left;
   width: 99.9%;
@@ -613,7 +616,7 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 79, scss/main.scss */
+/* line 82, scss/main.scss */
 #col1 {
   float: left;
   width: 33%;
@@ -622,7 +625,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 87, scss/main.scss */
+/* line 90, scss/main.scss */
 #col2 {
   float: left;
   width: 33%;
@@ -631,7 +634,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 95, scss/main.scss */
+/* line 98, scss/main.scss */
 #col3 {
   float: left;
   width: 33%;
@@ -640,7 +643,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 104, scss/main.scss */
+/* line 107, scss/main.scss */
 .amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
@@ -648,37 +651,37 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 20em) {
-  /* line 114, scss/main.scss */
+  /* line 117, scss/main.scss */
   body {
     background-color: red !important;
   }
 }
 @media only screen and (min-width: 20.063em) and (max-width: 60em) {
-  /* line 122, scss/main.scss */
+  /* line 125, scss/main.scss */
   p:first-child {
     padding: 0 15px;
   }
 
-  /* line 126, scss/main.scss */
+  /* line 129, scss/main.scss */
   #col1 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 132, scss/main.scss */
+  /* line 135, scss/main.scss */
   #col2 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 138, scss/main.scss */
+  /* line 141, scss/main.scss */
   #col3 {
     display: none;
   }
 
-  /* line 142, scss/main.scss */
+  /* line 145, scss/main.scss */
   #container3 {
     clear: left;
     width: 100% !important;
@@ -688,7 +691,7 @@ h1, h2, h3, h4, h5 {
     border-right: 0px;
   }
 
-  /* line 151, scss/main.scss */
+  /* line 154, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -697,7 +700,7 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 159, scss/main.scss */
+  /* line 162, scss/main.scss */
   #container1 {
     float: left;
     width: 100% !important;
@@ -705,25 +708,25 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 166, scss/main.scss */
+  /* line 169, scss/main.scss */
   article pre {
     margin: 0px !important;
     padding: 10px 0 25px 25px !important;
     border-radius: 0px !important;
   }
 
-  /* line 172, scss/main.scss */
+  /* line 175, scss/main.scss */
   article header > h1 {
     font-size: 6.4rem !important;
   }
 
-  /* line 177, scss/main.scss */
+  /* line 180, scss/main.scss */
   figure {
     margin: 0 5px 2em !important;
   }
 }
 @media only screen and (min-width: 60.063em) and (max-width: 110em) {
-  /* line 186, scss/main.scss */
+  /* line 189, scss/main.scss */
   #container3 {
     float: none;
     width: 90%;
@@ -731,7 +734,7 @@ h1, h2, h3, h4, h5 {
     margin: 50px auto;
   }
 
-  /* line 193, scss/main.scss */
+  /* line 196, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -740,7 +743,7 @@ h1, h2, h3, h4, h5 {
     right: 0px;
   }
 
-  /* line 201, scss/main.scss */
+  /* line 204, scss/main.scss */
   #container1 {
     float: left;
     width: 100%;
@@ -748,7 +751,7 @@ h1, h2, h3, h4, h5 {
     right: 50%;
   }
 
-  /* line 208, scss/main.scss */
+  /* line 211, scss/main.scss */
   #col1 {
     float: left;
     width: 50%;
@@ -757,7 +760,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 216, scss/main.scss */
+  /* line 219, scss/main.scss */
   #col2 {
     float: left;
     width: 50%;
@@ -766,7 +769,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 224, scss/main.scss */
+  /* line 227, scss/main.scss */
   #col3 {
     display: none;
   }
