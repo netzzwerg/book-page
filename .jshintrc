@@ -1,0 +1,47 @@
+{
+  // Sublime JSHint Plugin Default Values
+  "browser"       : true,
+  "esnext"        : true,
+  "globalstrict"  : false,
+  "quotmark"      : true,
+  "smarttabs"     : true,
+  "trailing"      : true,
+  "undef"         : true,
+  "unused"        : true,
+
+  // Custom Globals
+  "globals": {
+    "jasmine"     : false,
+    "spyOn"       : false,
+    "it"          : false,
+    "console"     : false,
+    "describe"    : false,
+    "expect"      : false,
+    "beforeEach"  : false,
+    "waits"       : false,
+    "waitsFor"    : false,
+    "runs"        : false,
+    "require"     : false,
+    "requirejs"   : false
+  },
+
+  // Project Settings
+  "maxerr"      : 50,   // Maximum error before stopping
+  "eqeqeq"      : true, // Require triple equals (===) for comparison
+  "strict"      : true, // Require all functions to run in ECMAScript 5's strict mode
+
+  // Environments
+  "browser"     : true,   // Web Browser (window, document, etc)
+  "couch"       : false,  // CouchDB
+  "devel"       : true,   // Development/debugging (alert, confirm, etc)
+  "dojo"        : false,  // Dojo Toolkit
+  "jquery"      : true,   // jQuery
+  "mootools"    : false,  // MooTools
+  "node"        : true,   // Node.js
+  "nonstandard" : false,  // Widely adopted globals (escape, unescape, etc)
+  "prototypejs" : false,  // Prototype and Scriptaculous
+  "rhino"       : false,  // Rhino
+  "worker"      : false,  // Web Workers
+  "wsh"         : false,  // Windows Scripting Host
+  "yui"         : false   // Yahoo User Interface
+}
