@@ -1,0 +1,11 @@
+{
+  "name": "book-page",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "weblimejs": "git@github.com:netzzwerg/weblimejs.git"
+  }
+}
