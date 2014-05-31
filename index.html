@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic|Crimson+Text:400,600' type='text/css' rel='stylesheet' />
 	<link rel="stylesheet" href="main.css">
+	<script data-main="book" src="bower_components/requirejs/require.js"></script>
 </head>
 <body>
 
@@ -75,28 +76,11 @@
 
 				<p>The most common approach to achieving this is by defining a JavaScript function where we then create an object using the <code>new</code> keyword. <code>this</code> can be used to help define new properties and methods for the object as follows:</p>
 
-				<pre><code data-language="javascript">
-// A car "class"
-function Car( model ) {
-
-  this.model = model;
-  this.color = "silver";
-  this.year  = "2012";
-
-  this.getInfo = function () {
-	return this.model + " " + this.year;
-  };
-
-}</code></pre>
+				<pre><code class="weblime" data-source-file="01.js" data-language="javascript"></code></pre>
 
 				<p>We can then instantiate the object using the Car constructor we defined above like this:</p>
 
-				<pre><code data-language="javascript">
-var myCar = new Car("ford");
-
-myCar.year = "2010";
-
-console.log( myCar.getInfo() );</code></pre>
+				<pre><code class="weblime" data-source-file="02.js" data-language="javascript"></code></pre>
 
 				<p>For more ways to define "classes" using JavaScript, see Stoyan Stefanov's useful <a href="http://www.phpied.com/3-ways-to-define-a-javascript-class/">post</a> on them.</p>
 
@@ -383,11 +367,6 @@ console.log( myCar.getInfo() );</code></pre>
 			</div>
 		</div>
 	</div>
-
-	<script src="bower_components/jquery/jquery.js"></script>
-	<script src="bower_components/underscore/underscore.js"></script>
-
-	<script src="book.js"></script>
 
 </body>
 </html>
