@@ -54,10 +54,10 @@ h1, h2, h3 , h4, h5 {
   margin: 50px auto;
   clear:left;
   overflow:hidden;
-  border: 5px solid #1e1e1e;
+  border: 5px solid #1B1D20;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
-  background-color: #1e1e1e;
+  background-color: #26292E;
 }
 
 #container2 {
@@ -65,7 +65,7 @@ h1, h2, h3 , h4, h5 {
   float:left;
   width:99.9%;
   position:relative;
-  right:33.333%;
+  right:33%;
   background-color: $content-background;
 }
 
@@ -73,10 +73,11 @@ h1, h2, h3 , h4, h5 {
   float:left;
   width:99.9%;
   position:relative;
-  right:33.33%;
+  right:33%;
   background-color: $content-background;
   padding: 0 0 10rem 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #F2F2F2;
+  xbox-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 #col1 {
@@ -93,6 +94,7 @@ h1, h2, h3 , h4, h5 {
   position:relative;
   left: 67%;
   overflow:hidden;
+  padding: 2rem 0 0 0
 }
 
 #col3 {
@@ -121,6 +123,10 @@ h1, h2, h3 , h4, h5 {
 
 
 @media only screen and (min-width: 20.063em) and (max-width: 60em) { // 800px
+
+  html {
+    background: #000000 !important; 
+  }
 
   p:first-child {
     padding: 0 15px;

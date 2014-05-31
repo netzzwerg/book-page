@@ -10,18 +10,11 @@
 
 pre {
 
-
-    word-wrap: break-word;
-    color: #fff;
-    @include background-image(radial-gradient(color-stops(#2A2E30, #111414), center center));
-    margin-bottom: 20px;
+    color: #FFFFFF;
     font-family: 'Monaco', courier, monospace;
-    box-shadow: 0 1px 2px #D1D1D1;
-    border-radius: 3px 0 0 3px;
-    overflow-y: hidden;
+    overflow-y: auto;
     display: block;
-    margin: 2rem 0 2rem 4.4rem;
-    padding: 0 0 20px 30px;
+    margin: 2rem 0 2rem 0;
     line-height: 100%; 
 
     /* Browser specific (not valid) styles to make codeformatted text wrap */        
@@ -38,54 +31,9 @@ pre {
         margin-top: 1.5em;
     }
 
-    .comment {
-        color: #75715E;
-    }
-
-    .constant {
-        color: #AE81FF;
-    }
-
-    .storage {
-        color: #66D9EF;
-    }
-
-    .string, .comment.docstring {
-        color: #E6DB74;
-    }
-
-    .support.tag {
-        color: #fff;
-    }
-
-    .keyword {
-        /* @todo some keywords use this light blue, most use the pink */
-        /*color: #66D9EF;*/
-        color: #F92672;
-    }
-
-    .selector {
-        color: #F92672;
-    }
-
-    .inherited-class {
-        font-style: italic;
-    }
-
-    .operator, pre .support.tag-name , pre .entity.tag {
-        color: #F92672;
-    }
-
-    .entity, pre .support.attribute, pre .entity.attribute {
-        color: #A6E22E;
-    }
-
-    .css-property, pre .storage.function {
-        font-style: italic;
-    }
-
-    .variable.global, pre .variable.class, pre .variable.instance {
-        color: #A6E22E;
+    /* remove cursor from inactive code section */
+    .ace_hidden-cursors {
+        opacity:0
     }
 
 }

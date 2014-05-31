@@ -1,114 +1,118 @@
 @charset "UTF-8";
 @media (min-width: 40rem) {
-  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 2, scss/base/_grid.scss */
   .column {
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 7, scss/base/_grid.scss */
   .column.full {
     width: 100%;
   }
 
-  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 8, scss/base/_grid.scss */
   .column.two-thirds {
     width: 66.7%;
   }
 
-  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 9, scss/base/_grid.scss */
   .column.half {
     width: 50%;
   }
 
-  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 10, scss/base/_grid.scss */
   .column.third {
     width: 33.3%;
   }
 
-  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 11, scss/base/_grid.scss */
   .column.fourth {
     width: 24.95%;
   }
 
-  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 12, scss/base/_grid.scss */
   .column.flow-opposite {
     float: right;
   }
 }
-/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 1, scss/component/_typography.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 5, scss/component/_typography.scss */
 body {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 9, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 9, scss/component/_typography.scss */
 h1 {
   font-size: 44px;
   font-size: 4.4rem;
 }
 
-/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 13, scss/component/_typography.scss */
 h2 {
   font-size: 37px;
   font-size: 3.7rem;
 }
 
-/* line 17, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 17, scss/component/_typography.scss */
 h3 {
   font-size: 27px;
   font-size: 2.7rem;
 }
 
-/* line 21, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 21, scss/component/_typography.scss */
 h4 {
   font-size: 23px;
   font-size: 2.3rem;
 }
 
-/* line 25, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 25, scss/component/_typography.scss */
 h5 {
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_typography.scss */
+/* line 29, scss/component/_typography.scss */
 h6 {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 3, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
+/* line 3, scss/component/_article.scss */
 article p, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol, article header {
   padding: 0 4.4rem;
   word-wrap: break-word;
 }
-/* line 8, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
+/* line 8, scss/component/_article.scss */
 article p {
   text-align: justify;
   line-height: 1.5em;
 }
-/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
+/* line 13, scss/component/_article.scss */
 article h1 {
   font-weight: 900;
   line-height: 1.1em;
 }
-/* line 18, /Users/bvarga/01_Workplace/book-page/scss/component/_article.scss */
+/* line 18, scss/component/_article.scss */
 article p + p {
   text-indent: 2em;
 }
 
-/* line 3, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 1, scss/component/_toc.scss */
+.toc {
+  color: #FFFFFF;
+}
+/* line 5, scss/component/_toc.scss */
 .toc h1, .toc h2, .toc h3, .toc h4, .toc h5 {
   padding: 0 4.4rem;
 }
-/* line 8, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 10, scss/component/_toc.scss */
 .toc h3.main-title {
   text-align: center;
   text-transform: uppercase;
@@ -120,73 +124,109 @@ article p + p {
   line-height: 6.52rem;
   color: #FFFFFF;
 }
-/* line 20, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 22, scss/component/_toc.scss */
 .toc ul {
   padding-left: 2rem;
+  width: 100%;
 }
-/* line 24, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc > ol, .toc > ul {
-  padding: 0 2rem 0 6.8rem;
+/* line 27, scss/component/_toc.scss */
+.toc > ol, .toc > ul, .toc > p {
+  padding: 0 0.8rem 0 6.8rem;
   line-height: 3.52rem;
+  width: 48rem;
 }
-/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc a {
+/* line 33, scss/component/_toc.scss */
+.toc a, .toc span, .toc p, .toc h1, .toc h2 {
   color: #AAAAAA;
 }
-/* line 33, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 37, scss/component/_toc.scss */
+.toc ul li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 44, scss/component/_toc.scss */
 .toc ul li > a {
-  background-color: #1e1e1e;
-  padding: 0 5px 0 0px;
+  background-color: #26292E;
+  padding: 0 1.3rem 0 0;
 }
-/* line 38, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc .post-date {
+/* line 50, scss/component/_toc.scss */
+.toc ul li > span {
   float: right;
-  background-color: #1e1e1e;
-  padding: 0 0px 0 5px;
+  background-color: #26292E;
+  display: inline-block;
+  padding: 0 0px 0 1.3rem;
+  xoverflow: scroll;
 }
-/* line 44, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc li.toc-section {
+/* line 61, scss/component/_toc.scss */
+.toc .post-date {
+  background-color: #26292E;
+  color: #3a4145;
+}
+/* line 66, scss/component/_toc.scss */
+.toc .toc-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 0 3rem 0;
 }
-/* line 49, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 71, scss/component/_toc.scss */
+.toc p.toc-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 75, scss/component/_toc.scss */
 .toc .toc-section:before {
   content: '';
 }
-/* line 53, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
+/* line 79, scss/component/_toc.scss */
 .toc ul li:before {
+  color: #3a4145;
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . ";
 }
-/* line 63, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc li.toc-section + li.toc-section {
+/* line 91, scss/component/_toc.scss */
+.toc .toc-section + .toc-section {
   padding: 2rem 0 2rem 0;
 }
-/* line 67, /Users/bvarga/01_Workplace/book-page/scss/component/_toc.scss */
-.toc li.toc-section + li {
+/* line 95, scss/component/_toc.scss */
+.toc .toc-section + li {
   padding: 2rem 0 0 0;
 }
+/* line 99, scss/component/_toc.scss */
+.toc div.copyright {
+  margin: 9rem 6.8rem 0 6.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.5em;
+  color: #3a4145;
+}
+/* line 105, scss/component/_toc.scss */
+.toc div.copyright h2 {
+  padding: 2rem 0 2rem 0;
+  font-size: 2rem;
+}
+/* line 110, scss/component/_toc.scss */
+.toc div.copyright p {
+  text-align: justify;
+}
 
-/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
+/* line 1, scss/component/_figure.scss */
 body {
   counter-reset: figures;
 }
 
-/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
+/* line 5, scss/component/_figure.scss */
 .figure {
   margin: 0 15px 1em;
 }
 
-/* line 9, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
+/* line 9, scss/component/_figure.scss */
 .figure img {
   margin: 0 auto;
   display: block;
   max-width: 100%;
 }
 
-/* line 15, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
+/* line 15, scss/component/_figure.scss */
 .figure figcaption {
   font-size: 0.8em;
   text-transform: uppercase;
@@ -196,7 +236,7 @@ body {
   counter-increment: figures;
 }
 
-/* line 24, /Users/bvarga/01_Workplace/book-page/scss/component/_figure.scss */
+/* line 24, scss/component/_figure.scss */
 .figure figcaption:before {
   content: "Fig. " counter(figures) " - ";
 }
@@ -210,27 +250,18 @@ body {
  * @author Craig Campbell
  * @version 1.0.2
  */
-/* line 11, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
+/* line 11, scss/component/_code.scss */
 pre {
-  word-wrap: break-word;
-  color: #fff;
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #2a2e30), color-stop(100%, #111414));
-  background-image: -webkit-radial-gradient(center center, #2a2e30, #111414);
-  background-image: -moz-radial-gradient(center center, #2a2e30, #111414);
-  background-image: -o-radial-gradient(center center, #2a2e30, #111414);
-  background-image: radial-gradient(center center, #2a2e30, #111414);
-  margin-bottom: 20px;
+  color: #FFFFFF;
   font-family: 'Monaco', courier, monospace;
-  box-shadow: 0 1px 2px #D1D1D1;
-  border-radius: 3px 0 0 3px;
-  overflow-y: hidden;
+  overflow-y: auto;
   display: block;
-  margin: 2rem 0 2rem 4.4rem;
-  padding: 0 0 20px 30px;
+  margin: 2rem 0 2rem 0;
   line-height: 100%;
   /* Browser specific (not valid) styles to make codeformatted text wrap */
+  /* remove cursor from inactive code section */
 }
-/* line 29, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
+/* line 22, scss/component/_code.scss */
 pre code {
   white-space: code-wrap;
   /* css-3 */
@@ -243,62 +274,16 @@ pre code {
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */
 }
-/* line 37, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
+/* line 30, scss/component/_code.scss */
 pre code + p {
   margin-top: 1.5em;
 }
-/* line 41, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .comment {
-  color: #75715E;
-}
-/* line 45, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .constant {
-  color: #AE81FF;
-}
-/* line 49, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .storage {
-  color: #66D9EF;
-}
-/* line 53, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .string, pre .comment.docstring {
-  color: #E6DB74;
-}
-/* line 57, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .support.tag {
-  color: #fff;
-}
-/* line 61, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .keyword {
-  /* @todo some keywords use this light blue, most use the pink */
-  /*color: #66D9EF;*/
-  color: #F92672;
-}
-/* line 67, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .selector {
-  color: #F92672;
-}
-/* line 71, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .inherited-class {
-  font-style: italic;
-}
-/* line 75, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .operator, pre pre .support.tag-name, pre pre .entity.tag {
-  color: #F92672;
-}
-/* line 79, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .entity, pre pre .support.attribute, pre pre .entity.attribute {
-  color: #A6E22E;
-}
-/* line 83, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .css-property, pre pre .storage.function {
-  font-style: italic;
-}
-/* line 87, /Users/bvarga/01_Workplace/book-page/scss/component/_code.scss */
-pre .variable.global, pre pre .variable.class, pre pre .variable.instance {
-  color: #A6E22E;
+/* line 35, scss/component/_code.scss */
+pre .ace_hidden-cursors {
+  opacity: 0;
 }
 
-/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 1, scss/component/_table.scss */
 table {
   background: none repeat scroll 0 0 #EAEBEC;
   border-radius: 3px 3px 3px 3px;
@@ -311,38 +296,38 @@ table {
   border-spacing: 0px;
 }
 
-/* line 13, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 13, scss/component/_table.scss */
 td {
   vertical-align: text-top;
   padding: 0.3em 0.6em;
 }
 
-/* line 18, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 18, scss/component/_table.scss */
 table.framed, table.framed-hr {
   border-collapse: collapse;
 }
 
-/* line 22, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 22, scss/component/_table.scss */
 table.framed td {
   border: thin solid #DDDDDD;
 }
 
-/* line 26, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 26, scss/component/_table.scss */
 table.framed-hr td {
   border-bottom: thin solid #DDDDDD;
 }
 
-/* line 30, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 30, scss/component/_table.scss */
 table.framed td.right, table.framed-hr td.right {
   text-align: right;
 }
 
-/* line 34, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 34, scss/component/_table.scss */
 table.framed tr.doubleline, table.framed-hr tr.doubleline {
   border-bottom: medium double;
 }
 
-/* line 38, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 38, scss/component/_table.scss */
 table th {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(100%, #ebebeb));
   background-image: -webkit-linear-gradient(center top, #ededed, #ebebeb);
@@ -353,36 +338,36 @@ table th {
   padding: 21px 25px 22px;
 }
 
-/* line 44, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 44, scss/component/_table.scss */
 table th:first-child {
   padding-left: 20px;
   text-align: left;
 }
 
-/* line 49, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 49, scss/component/_table.scss */
 table tr:first-child th:first-child {
   border-top-left-radius: 3px;
 }
 
-/* line 53, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 53, scss/component/_table.scss */
 table tr:first-child th:last-child {
   border-top-right-radius: 3px;
 }
 
-/* line 57, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 57, scss/component/_table.scss */
 table tr {
   padding-left: 20px;
   text-align: center;
 }
 
-/* line 62, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 62, scss/component/_table.scss */
 table tr td:first-child {
   border-left: 0 none;
   padding-left: 20px;
   text-align: left;
 }
 
-/* line 68, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 68, scss/component/_table.scss */
 table tr td {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #fafafa));
   background-image: -webkit-linear-gradient(center top, #fbfbfb, #fafafa);
@@ -395,7 +380,7 @@ table tr td {
   padding: 18px;
 }
 
-/* line 76, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 76, scss/component/_table.scss */
 table tr.even td {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #f6f6f6));
   background-image: -webkit-linear-gradient(center top, #f8f8f8, #f6f6f6);
@@ -404,22 +389,22 @@ table tr.even td {
   background-image: linear-gradient(center top, #f8f8f8, #f6f6f6);
 }
 
-/* line 80, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 80, scss/component/_table.scss */
 table tr:last-child td {
   border-bottom: 0 none;
 }
 
-/* line 84, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 84, scss/component/_table.scss */
 table tr:last-child td:first-child {
   border-bottom-left-radius: 3px;
 }
 
-/* line 88, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 88, scss/component/_table.scss */
 table tr:last-child td:last-child {
   border-bottom-right-radius: 3px;
 }
 
-/* line 92, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 92, scss/component/_table.scss */
 table tr:hover td {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #f0f0f0));
   background-image: -webkit-linear-gradient(center top, #f2f2f2, #f0f0f0);
@@ -428,45 +413,45 @@ table tr:hover td {
   background-image: linear-gradient(center top, #f2f2f2, #f0f0f0);
 }
 
-/* line 96, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 96, scss/component/_table.scss */
 .table-heading {
   padding-bottom: 30px;
   padding-top: 20px;
 }
 
-/* line 101, /Users/bvarga/01_Workplace/book-page/scss/component/_table.scss */
+/* line 101, scss/component/_table.scss */
 .table-text {
   color: #6F6F6F;
 }
 
-/* line 1, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 1, scss/component/_header.scss */
 header + p {
   font-size: 1.8rem;
 }
 
-/* line 5, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 5, scss/component/_header.scss */
 header {
   margin: 3rem 0 0 0;
 }
-/* line 9, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 9, scss/component/_header.scss */
 header div {
   color: #3a4145;
-  font-size: 1rem;
+  font-size: 1.8rem;
   padding: 0 0 0 2px;
   color: #666666;
 }
-/* line 16, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 16, scss/component/_header.scss */
 header h1 {
-  margin: 0 0 3rem 0;
+  margin: 5rem 0rem 5rem 0;
 }
-/* line 20, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 20, scss/component/_header.scss */
 header h2 {
   border-top: 1px solid #DDD;
   color: #DDD;
   margin: 0 0 10px 0;
   text-align: center;
 }
-/* line 26, /Users/bvarga/01_Workplace/book-page/scss/component/_header.scss */
+/* line 26, scss/component/_header.scss */
 header h2 span {
   font-size: 2.2rem;
   background: white;
@@ -476,39 +461,39 @@ header h2 span {
 }
 
 @media (min-width: 40rem) {
-  /* line 2, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 2, scss/base/_grid.scss */
   .column {
     float: left;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* line 7, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 7, scss/base/_grid.scss */
   .column.full {
     width: 100%;
   }
 
-  /* line 8, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 8, scss/base/_grid.scss */
   .column.two-thirds {
     width: 66.7%;
   }
 
-  /* line 9, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 9, scss/base/_grid.scss */
   .column.half {
     width: 50%;
   }
 
-  /* line 10, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 10, scss/base/_grid.scss */
   .column.third {
     width: 33.3%;
   }
 
-  /* line 11, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 11, scss/base/_grid.scss */
   .column.fourth {
     width: 24.95%;
   }
 
-  /* line 12, /Users/bvarga/01_Workplace/book-page/scss/base/_grid.scss */
+  /* line 12, scss/base/_grid.scss */
   .column.flow-opposite {
     float: right;
   }
@@ -527,12 +512,12 @@ header h2 span {
 .clearfix {
   *zoom: 1;
 }
-/* line 40, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
+/* line 40, scss/base/_mixin.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 41, /Users/bvarga/01_Workplace/book-page/scss/base/_mixin.scss */
+/* line 41, scss/base/_mixin.scss */
 .clearfix:after {
   clear: both;
 }
@@ -544,7 +529,7 @@ header h2 span {
 
 /* line 16, scss/main.scss */
 html {
-  background: linear-gradient(315deg, rgba(220, 110, 10, 0.2), rgba(0, 170, 255, 0.1) 80%), url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
+  background: linear-gradient(160deg, rgba(74, 137, 220, 0.2), rgba(233, 87, 63, 0.2) 60%), url(img/bg-diagmonds.png);
 }
 
 /* line 20, scss/main.scss */
@@ -589,10 +574,10 @@ h1, h2, h3, h4, h5 {
   margin: 50px auto;
   clear: left;
   overflow: hidden;
-  border: 5px solid #1e1e1e;
+  border: 5px solid #1B1D20;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
-  background-color: #1e1e1e;
+  background-color: #26292E;
 }
 
 /* line 63, scss/main.scss */
@@ -601,7 +586,7 @@ h1, h2, h3, h4, h5 {
   float: left;
   width: 99.9%;
   position: relative;
-  right: 33.333%;
+  right: 33%;
   background-color: white;
 }
 
@@ -610,13 +595,14 @@ h1, h2, h3, h4, h5 {
   float: left;
   width: 99.9%;
   position: relative;
-  right: 33.33%;
+  right: 33%;
   background-color: white;
   padding: 0 0 10rem 0;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #F2F2F2;
+  xbox-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 82, scss/main.scss */
+/* line 83, scss/main.scss */
 #col1 {
   float: left;
   width: 33%;
@@ -625,16 +611,17 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 90, scss/main.scss */
+/* line 91, scss/main.scss */
 #col2 {
   float: left;
   width: 33%;
   position: relative;
   left: 67%;
   overflow: hidden;
+  padding: 2rem 0 0 0;
 }
 
-/* line 98, scss/main.scss */
+/* line 100, scss/main.scss */
 #col3 {
   float: left;
   width: 33%;
@@ -643,7 +630,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 107, scss/main.scss */
+/* line 109, scss/main.scss */
 .amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
@@ -651,37 +638,42 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 20em) {
-  /* line 117, scss/main.scss */
+  /* line 119, scss/main.scss */
   body {
     background-color: red !important;
   }
 }
 @media only screen and (min-width: 20.063em) and (max-width: 60em) {
-  /* line 125, scss/main.scss */
+  /* line 127, scss/main.scss */
+  html {
+    background: #000000 !important;
+  }
+
+  /* line 131, scss/main.scss */
   p:first-child {
     padding: 0 15px;
   }
 
-  /* line 129, scss/main.scss */
+  /* line 135, scss/main.scss */
   #col1 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 135, scss/main.scss */
+  /* line 141, scss/main.scss */
   #col2 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 141, scss/main.scss */
+  /* line 147, scss/main.scss */
   #col3 {
     display: none;
   }
 
-  /* line 145, scss/main.scss */
+  /* line 151, scss/main.scss */
   #container3 {
     clear: left;
     width: 100% !important;
@@ -691,7 +683,7 @@ h1, h2, h3, h4, h5 {
     border-right: 0px;
   }
 
-  /* line 154, scss/main.scss */
+  /* line 160, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -700,7 +692,7 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 162, scss/main.scss */
+  /* line 168, scss/main.scss */
   #container1 {
     float: left;
     width: 100% !important;
@@ -708,25 +700,25 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 169, scss/main.scss */
+  /* line 175, scss/main.scss */
   article pre {
     margin: 0px !important;
     padding: 10px 0 25px 25px !important;
     border-radius: 0px !important;
   }
 
-  /* line 175, scss/main.scss */
+  /* line 181, scss/main.scss */
   article header > h1 {
     font-size: 6.4rem !important;
   }
 
-  /* line 180, scss/main.scss */
+  /* line 186, scss/main.scss */
   figure {
     margin: 0 5px 2em !important;
   }
 }
 @media only screen and (min-width: 60.063em) and (max-width: 110em) {
-  /* line 189, scss/main.scss */
+  /* line 195, scss/main.scss */
   #container3 {
     float: none;
     width: 90%;
@@ -734,7 +726,7 @@ h1, h2, h3, h4, h5 {
     margin: 50px auto;
   }
 
-  /* line 196, scss/main.scss */
+  /* line 202, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -743,7 +735,7 @@ h1, h2, h3, h4, h5 {
     right: 0px;
   }
 
-  /* line 204, scss/main.scss */
+  /* line 210, scss/main.scss */
   #container1 {
     float: left;
     width: 100%;
@@ -751,7 +743,7 @@ h1, h2, h3, h4, h5 {
     right: 50%;
   }
 
-  /* line 211, scss/main.scss */
+  /* line 217, scss/main.scss */
   #col1 {
     float: left;
     width: 50%;
@@ -760,7 +752,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 219, scss/main.scss */
+  /* line 225, scss/main.scss */
   #col2 {
     float: left;
     width: 50%;
@@ -769,7 +761,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 227, scss/main.scss */
+  /* line 233, scss/main.scss */
   #col3 {
     display: none;
   }
