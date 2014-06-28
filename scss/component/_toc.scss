@@ -1,115 +1,96 @@
+$light-background-color: #e6e9ed;
+$dark-background-color: #1b1d20;
+
+$light-gray-color: #f5f7fa;
+$medium-gray-color: #aab2bd;
+$dark-gray-color: #656d78;
+
 .toc {
-
-	color: #FFFFFF;
-
-	h1, h2, h3, h4, h5 {
-		padding: 0 4.4rem;
-	}
-
-	// main headline
-	h3.main-title {
-		text-align: center;
-		text-transform: uppercase;
-		font-weight: 700;
-		letter-spacing: -2px;
-		margin: 6% 11.4% 6% 11.4%;
-		padding: 0 10%;
-		font-size: 6.52rem;
-		line-height: 6.52rem;
-		color: #FFFFFF;
-	}
-
-	ul {
-		padding-left: 2rem;
-		width: 100%;
-	}
-
-	> ol, > ul, > p {
-		padding: 0 0.8rem 0 6.8rem;
-		line-height: 3.52rem;
-		width: 48rem;
-	}
-
-	a, span, p, h1, h2 {
-		color: #AAAAAA;
-	}
-
-	ul li {
-  overflow:hidden; 
-  white-space:nowrap;
-  text-overflow:ellipsis;
-
-	}
-
-	ul li > a {
-		background-color: #26292E;
-padding: 0 1.3rem 0 0;
-
-	}
-
-	ul li > span {
-		float: right;
-		background-color: #26292E;
-	
-		  display: inline-block;
-padding: 0 0px 0 1.3rem;
-		xoverflow: scroll;
-
-
-	}
-
-	.post-date {
-		background-color: #26292E;
-		color: #3a4145;
-	}
-
-	.toc-section {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-		padding: 0 0 3rem 0;
-	}
-
-	p.toc-section {
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
-	}
-
-	.toc-section:before {
-		content: '';
-	}
-
-	ul li:before {
-		color: #3a4145;
-		float: left;
-		width: 0;
-		white-space: nowrap;
-		content:
-			". . . . . . . . . . . . . . . . . . . . "
-			". . . . . . . . . . . . . . . . . . . . "
-			". . . . . . . . . . . . . . . . . . . . "
-			". . . . . . . . . . "
-	}
-
-	.toc-section + .toc-section {
-		padding: 2rem 0 2rem 0;
-	}
-
-	.toc-section + li {
-		padding: 2rem 0 0 0;
-	}
-
-	div.copyright {
-		margin: 9rem 6.8rem 0 6.8rem;
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
-		line-height: 1.5em;
-		color: #3a4145;
-
-		h2 {
-			padding: 2rem 0 2rem 0;
-			font-size: 2rem;
-		}
-
-		p {
-			text-align: justify;
-		}
-	}
-
+  counter-reset: chapter 0 figure 0;
+  li {
+    white-space: nowrap;
+    list-style-position: inside;
+    line-height: 30px;
+    color: $medium-gray-color;
+    a, span {
+      color: $light-gray-color;
+      background-color: $dark-background-color;
+    }
+    a {
+      padding: 0 5px 0 0;
+    }
+    span {
+      float: right;
+      position: relative;
+      padding: 0 0 0 5px;
+    }
+    span:after {
+      counter-increment: chapter;
+      content: " " counter(chapter, upper-roman) " ";
+    }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    :before {
+      color: $dark-gray-color;
+      float: left;
+      width: 0;
+      content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+    }
+  }
+  h3.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 6% 11.4% 6% 11.4%;
+    padding: 0 10%;
+    font-size: 6.52rem;
+    line-height: 6.52rem;
+    color: #FFFFFF;
+  }
+  ul {
+    padding-left: 2rem;
+    width: 100%;
+  }
+  > ol, > ul, > p, > div {
+    padding: 0 0 0 4.8rem;
+    line-height: 3.52rem;
+    width: 85%;
+  }
+  a, span, p, h1, h2 {
+    color: #AAAAAA;
+  }
+  .toc-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 0 3rem 0;
+  }
+  p.toc-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .toc-section:before {
+    content: '';
+  }
+  .toc-section + .toc-section {
+    padding: 2rem 0 2rem 0;
+  }
+  .toc-section + li {
+    padding: 2rem 0 0 0;
+  }
+  div.copyright {
+    line-height: 1.5em;
+    color: #3a4145;
+    h2 {
+      padding: 2rem 0 2rem 0;
+      font-size: 2rem;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  ul:nth-child(4) li {
+    span:after {
+      counter-increment: figure;
+      content: "Fig. " counter(figure);
+    }
+  }
 }

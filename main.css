@@ -104,15 +104,47 @@ article p + p {
   text-indent: 2em;
 }
 
-/* line 1, scss/component/_toc.scss */
+/* line 8, scss/component/_toc.scss */
 .toc {
-  color: #FFFFFF;
-}
-/* line 5, scss/component/_toc.scss */
-.toc h1, .toc h2, .toc h3, .toc h4, .toc h5 {
-  padding: 0 4.4rem;
+  counter-reset: chapter 0 figure 0;
 }
 /* line 10, scss/component/_toc.scss */
+.toc li {
+  white-space: nowrap;
+  list-style-position: inside;
+  line-height: 30px;
+  color: #aab2bd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 15, scss/component/_toc.scss */
+.toc li a, .toc li span {
+  color: #f5f7fa;
+  background-color: #1b1d20;
+}
+/* line 19, scss/component/_toc.scss */
+.toc li a {
+  padding: 0 5px 0 0;
+}
+/* line 22, scss/component/_toc.scss */
+.toc li span {
+  float: right;
+  position: relative;
+  padding: 0 0 0 5px;
+}
+/* line 27, scss/component/_toc.scss */
+.toc li span:after {
+  counter-increment: chapter;
+  content: " " counter(chapter,upper-roman) " ";
+}
+/* line 33, scss/component/_toc.scss */
+.toc li :before {
+  color: #656d78;
+  float: left;
+  width: 0;
+  content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+}
+/* line 40, scss/component/_toc.scss */
 .toc h3.main-title {
   text-align: center;
   text-transform: uppercase;
@@ -124,89 +156,60 @@ article p + p {
   line-height: 6.52rem;
   color: #FFFFFF;
 }
-/* line 22, scss/component/_toc.scss */
+/* line 51, scss/component/_toc.scss */
 .toc ul {
   padding-left: 2rem;
   width: 100%;
 }
-/* line 27, scss/component/_toc.scss */
-.toc > ol, .toc > ul, .toc > p {
-  padding: 0 0.8rem 0 6.8rem;
+/* line 55, scss/component/_toc.scss */
+.toc > ol, .toc > ul, .toc > p, .toc > div {
+  padding: 0 0 0 4.8rem;
   line-height: 3.52rem;
-  width: 48rem;
+  width: 85%;
 }
-/* line 33, scss/component/_toc.scss */
+/* line 60, scss/component/_toc.scss */
 .toc a, .toc span, .toc p, .toc h1, .toc h2 {
   color: #AAAAAA;
 }
-/* line 37, scss/component/_toc.scss */
-.toc ul li {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 44, scss/component/_toc.scss */
-.toc ul li > a {
-  background-color: #26292E;
-  padding: 0 1.3rem 0 0;
-}
-/* line 50, scss/component/_toc.scss */
-.toc ul li > span {
-  float: right;
-  background-color: #26292E;
-  display: inline-block;
-  padding: 0 0px 0 1.3rem;
-  xoverflow: scroll;
-}
-/* line 61, scss/component/_toc.scss */
-.toc .post-date {
-  background-color: #26292E;
-  color: #3a4145;
-}
-/* line 66, scss/component/_toc.scss */
+/* line 63, scss/component/_toc.scss */
 .toc .toc-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0 0 3rem 0;
 }
-/* line 71, scss/component/_toc.scss */
+/* line 67, scss/component/_toc.scss */
 .toc p.toc-section {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 75, scss/component/_toc.scss */
+/* line 70, scss/component/_toc.scss */
 .toc .toc-section:before {
   content: '';
 }
-/* line 79, scss/component/_toc.scss */
-.toc ul li:before {
-  color: #3a4145;
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . ";
-}
-/* line 91, scss/component/_toc.scss */
+/* line 73, scss/component/_toc.scss */
 .toc .toc-section + .toc-section {
   padding: 2rem 0 2rem 0;
 }
-/* line 95, scss/component/_toc.scss */
+/* line 76, scss/component/_toc.scss */
 .toc .toc-section + li {
   padding: 2rem 0 0 0;
 }
-/* line 99, scss/component/_toc.scss */
+/* line 79, scss/component/_toc.scss */
 .toc div.copyright {
-  margin: 9rem 6.8rem 0 6.8rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 1.5em;
   color: #3a4145;
 }
-/* line 105, scss/component/_toc.scss */
+/* line 82, scss/component/_toc.scss */
 .toc div.copyright h2 {
   padding: 2rem 0 2rem 0;
   font-size: 2rem;
 }
-/* line 110, scss/component/_toc.scss */
+/* line 86, scss/component/_toc.scss */
 .toc div.copyright p {
   text-align: justify;
+}
+/* line 91, scss/component/_toc.scss */
+.toc ul:nth-child(4) li span:after {
+  counter-increment: figure;
+  content: "Fig. " counter(figure);
 }
 
 /* line 1, scss/component/_figure.scss */
@@ -503,12 +506,12 @@ header h2 span {
   float: left !important;
 }
 
-/* line 11, scss/main.scss */
+/* line 14, scss/main.scss */
 .right {
   float: right !important;
 }
 
-/* line 12, scss/main.scss */
+/* line 18, scss/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -522,17 +525,17 @@ header h2 span {
   clear: both;
 }
 
-/* line 13, scss/main.scss */
+/* line 22, scss/main.scss */
 .hide {
   display: none;
 }
 
-/* line 16, scss/main.scss */
+/* line 26, scss/main.scss */
 html {
-  background: linear-gradient(160deg, rgba(74, 137, 220, 0.2), rgba(233, 87, 63, 0.2) 60%), url(img/bg-diagmonds.png);
+  background: linear-gradient(160deg, rgba(74, 137, 220, 0.2), rgba(48, 39, 70, 0.2) 60%), url(img/bg-diagmonds.png);
 }
 
-/* line 20, scss/main.scss */
+/* line 30, scss/main.scss */
 body {
   color: #3a4145;
   padding: 0;
@@ -546,29 +549,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 34, scss/main.scss */
+/* line 45, scss/main.scss */
 .header {
   padding: 0 15px;
 }
 
-/* line 38, scss/main.scss */
+/* line 49, scss/main.scss */
 a {
   text-decoration: none;
   color: #3a4145;
 }
 
-/* line 43, scss/main.scss */
+/* line 54, scss/main.scss */
 p:first-child, .toc h3 {
   padding-top: 20px;
 }
 
-/* line 47, scss/main.scss */
+/* line 58, scss/main.scss */
 h1, h2, h3, h4, h5 {
   color: #000;
 }
 
 /* column layout */
-/* line 52, scss/main.scss */
+/* line 63, scss/main.scss */
 #container3 {
   width: 1740px;
   margin: 50px auto;
@@ -577,10 +580,10 @@ h1, h2, h3, h4, h5 {
   border: 5px solid #1B1D20;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
-  background-color: #26292E;
+  background-color: #1B1D20;
 }
 
-/* line 63, scss/main.scss */
+/* line 75, scss/main.scss */
 #container2 {
   clear: left;
   float: left;
@@ -590,7 +593,7 @@ h1, h2, h3, h4, h5 {
   background-color: white;
 }
 
-/* line 72, scss/main.scss */
+/* line 84, scss/main.scss */
 #container1 {
   float: left;
   width: 99.9%;
@@ -602,7 +605,7 @@ h1, h2, h3, h4, h5 {
   xbox-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), inset 6px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 83, scss/main.scss */
+/* line 95, scss/main.scss */
 #col1 {
   float: left;
   width: 33%;
@@ -611,7 +614,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 91, scss/main.scss */
+/* line 103, scss/main.scss */
 #col2 {
   float: left;
   width: 33%;
@@ -621,7 +624,7 @@ h1, h2, h3, h4, h5 {
   padding: 2rem 0 0 0;
 }
 
-/* line 100, scss/main.scss */
+/* line 112, scss/main.scss */
 #col3 {
   float: left;
   width: 33%;
@@ -630,7 +633,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 }
 
-/* line 109, scss/main.scss */
+/* line 120, scss/main.scss */
 .amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
@@ -638,42 +641,42 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 20em) {
-  /* line 119, scss/main.scss */
+  /* line 131, scss/main.scss */
   body {
     background-color: red !important;
   }
 }
 @media only screen and (min-width: 20.063em) and (max-width: 60em) {
-  /* line 127, scss/main.scss */
+  /* line 138, scss/main.scss */
   html {
     background: #000000 !important;
   }
 
-  /* line 131, scss/main.scss */
+  /* line 141, scss/main.scss */
   p:first-child {
     padding: 0 15px;
   }
 
-  /* line 135, scss/main.scss */
+  /* line 144, scss/main.scss */
   #col1 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 141, scss/main.scss */
+  /* line 149, scss/main.scss */
   #col2 {
     float: none !important;
     width: 100% !important;
     left: 0px !important;
   }
 
-  /* line 147, scss/main.scss */
+  /* line 154, scss/main.scss */
   #col3 {
     display: none;
   }
 
-  /* line 151, scss/main.scss */
+  /* line 157, scss/main.scss */
   #container3 {
     clear: left;
     width: 100% !important;
@@ -683,7 +686,7 @@ h1, h2, h3, h4, h5 {
     border-right: 0px;
   }
 
-  /* line 160, scss/main.scss */
+  /* line 165, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -692,7 +695,7 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 168, scss/main.scss */
+  /* line 172, scss/main.scss */
   #container1 {
     float: left;
     width: 100% !important;
@@ -700,14 +703,14 @@ h1, h2, h3, h4, h5 {
     right: 0px !important;
   }
 
-  /* line 175, scss/main.scss */
+  /* line 178, scss/main.scss */
   article pre {
     margin: 0px !important;
     padding: 10px 0 25px 25px !important;
     border-radius: 0px !important;
   }
 
-  /* line 181, scss/main.scss */
+  /* line 183, scss/main.scss */
   article header > h1 {
     font-size: 6.4rem !important;
   }
@@ -718,7 +721,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 @media only screen and (min-width: 60.063em) and (max-width: 110em) {
-  /* line 195, scss/main.scss */
+  /* line 192, scss/main.scss */
   #container3 {
     float: none;
     width: 90%;
@@ -726,7 +729,7 @@ h1, h2, h3, h4, h5 {
     margin: 50px auto;
   }
 
-  /* line 202, scss/main.scss */
+  /* line 198, scss/main.scss */
   #container2 {
     clear: left;
     float: left;
@@ -735,7 +738,7 @@ h1, h2, h3, h4, h5 {
     right: 0px;
   }
 
-  /* line 210, scss/main.scss */
+  /* line 205, scss/main.scss */
   #container1 {
     float: left;
     width: 100%;
@@ -743,7 +746,7 @@ h1, h2, h3, h4, h5 {
     right: 50%;
   }
 
-  /* line 217, scss/main.scss */
+  /* line 211, scss/main.scss */
   #col1 {
     float: left;
     width: 50%;
@@ -752,7 +755,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 225, scss/main.scss */
+  /* line 218, scss/main.scss */
   #col2 {
     float: left;
     width: 50%;
@@ -761,7 +764,7 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
   }
 
-  /* line 233, scss/main.scss */
+  /* line 225, scss/main.scss */
   #col3 {
     display: none;
   }
