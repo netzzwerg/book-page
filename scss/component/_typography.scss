@@ -1,31 +1,42 @@
 html {
-	font-size: $font-size-base;
+  font-size: $font-size-base;
 }
 
 body {
-	@include rem(font-size, 1.6rem);
+  @include rem(font-size, 1.6rem);
 }
 
 h1 {
-	@include rem(font-size, $font-size-h1);
+  @include rem(font-size, $font-size-h1);
 }
 
 h2 {
-	@include rem(font-size, $font-size-h2);
+  @include rem(font-size, $font-size-h2);
 }
 
 h3 {
-	@include rem(font-size, $font-size-h3);
+  @include rem(font-size, $font-size-h3);
 }
 
 h4 {
-	@include rem(font-size, $font-size-h4);
+  @include rem(font-size, $font-size-h4);
 }
 
 h5 {
-	@include rem(font-size, $font-size-h5);
+  @include rem(font-size, $font-size-h5);
 }
 
 h6 {
-	@include rem(font-size, $font-size-h6);
+  @include rem(font-size, $font-size-h6);
+}
+
+.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
 }

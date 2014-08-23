@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     watch: {
       scss: {
         files: ['scss/**/*.scss'],
-        tasks: ['compass'], // Add more tasks here.
+        tasks: ['sass:dist'], // Add more tasks here.
         options: {
           livereload: 35729
         }
@@ -38,15 +38,18 @@ module.exports = function(grunt) {
       }
     },
 
-    compass: {
-      build: {
+    sass: {
+      dist: {
+        files: {
+          'main.css': 'scss/main.scss'
+        }
+      },
+      dev: {
         options: {
-          relativeAssets: true,
-          sassDir: 'scss',
-          cssDir: '',
-          environment: 'development',
-          outputStyle: 'expanded',
-          imagesDir: 'img'
+          sourceMap: true
+        },
+        files: {
+          'main.css': 'scss/main.scss'
         }
       }
     }
@@ -56,7 +59,7 @@ module.exports = function(grunt) {
   // Load task modules.
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
   grunt.registerTask('default', 'server');

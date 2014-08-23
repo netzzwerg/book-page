@@ -1,22 +1,16 @@
 article {
-
-	p, h2, h3, h4, h5, figcaption, ul, ol, header {
-		padding: 0 4.4rem;
-		word-wrap: break-word;
-	}
-
-	p {
-		text-align: justify;
-		line-height: 1.5em;
-	}
-
-	h1 {
-		font-weight: 900;
-		line-height: 1.1em;
-	}
-
-	p + p {
-		text-indent: 2em;
-	}
-
+  p, h2, h3, h4, h5, figcaption, ul, ol, header {
+    word-wrap: break-word;
+  }
+  p {
+    text-align: justify;
+    line-height: 1.5em;
+  }
+  h1 {
+    font-weight: 900;
+    line-height: 1.1em;
+  }
+  p + p {
+    text-indent: 2em;
+  }
 }

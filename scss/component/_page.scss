@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  color: $font-color;
+  background-color: #ececec;
+  background: linear-gradient(160deg, rgba(74, 137, 220, 0.2), rgba(233, 87, 63, 0.2) 60%), url(img/bg-diagmonds.png);
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  line-height: 150%;
+  // Set to $base-line-height to take on browser default of 150%
+  cursor: $cursor-default;
+  -webkit-font-smoothing: antialiased;
+}

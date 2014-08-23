@@ -1,26 +1,22 @@
 body {
-	counter-reset: figures;
+  counter-reset: figures;
 }
 
 .figure {
-	margin: 0 15px 1em;
-}
-
-.figure img {
-	margin: 0 auto;
-	display: block;
-	max-width: 100%;
-}
-
-.figure figcaption {
-	font-size: 0.8em;
-	text-transform: uppercase;
-	color: #666666;
-	padding: 0 4.4rem;
-	text-align: right;
-	counter-increment: figures;
-}
-
-.figure figcaption:before {
-	content: 'Fig. ' counter(figures) ' - ';
+  margin: 0 15px 1em;
+  img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+  figcaption {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #666666;
+    text-align: right;
+    counter-increment: figures;
+  }
+  figcaption:before {
+    content: "Fig. " counter(figures) " - ";
+  }
 }

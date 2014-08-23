@@ -1,213 +1,103 @@
-@charset "UTF-8"; 
+$book-page-bg-color: $light-background-color;
+$side-bar-bg-color: $dark-background-color;
+$padding: 3rem;
 
-@import "settings";
-@import "components";
-@import "base";
+.page, .navigation {
+  padding: $padding / 2 $padding;
+  float: left;
+}
 
-
-// useful HTML classes
-.left { float: left !important; }
-.right { float: right !important; }
-.clearfix { @include clearfix; }
-.hide { display: none; }
-
-
-body {
-  background: $body-background;
-  color: $font-color;
-  padding: 0;
-  margin: 0;
-  font-family: $font-family;
-  font-weight: $font-weight;
-  font-style: $font-style;
-  line-height: 150%; // Set to $base-line-height to take on browser default of 150%
+.wrap {
+  width: 100%;
+  max-width: 1800px;
+  margin: 2rem auto;
   position: relative;
-  cursor: $cursor-default;
-  -webkit-font-smoothing: antialiased;
 }
 
-.header {
-  padding: 0 15px;
+.wrap:before,
+.wrap:after {
+  content: '';
+  display: table;
 }
 
-a {
-  text-decoration: none;
-  color: $font-color;
+.wrap:after {
+  clear: both;
 }
 
-p:first-child, .toc h3 { 
-  padding-top: 20px;
+.page,
+.page:before {
+  width: 35%;
 }
 
-
-/* column layout */
-#container3 {
-  width: 1740px; // 3 x 580px
-  margin: 50px auto;
-
-  clear:left;
-  //float:left;
-  //width:100%;
-  overflow:hidden;
-  background:#EDE0CE;
+.page:before {
+  left: 0px;
+  background-color: $book-page-bg-color;
 }
 
-#container2 {
-  clear:left;
-  float:left;
-  width:100%;
-  position:relative;
-  right:33.333%;
-  background: none repeat scroll 0 0 #FFFFFF;
-  xbox-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+.page:first-child + .page:before {
+  left: 35%;
 }
 
-#container1 {
-  float:left;
-  width:100%;
-  position:relative;
-  right:33.33%;
-  background: none repeat scroll 0 0 #FFFFFF;
-  xbox-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+.navigation:before {
+  left: 70%;
 }
 
-#col1 {
-  float:left;
-  width:29.33%;
-  position:relative;
-  left:68.67%;
-  overflow:hidden;
+.navigation,
+.navigation:before {
+  width: 30%;
+  background-color: $side-bar-bg-color;
 }
 
-#col2 {
-  float:left;
-  width:29.33%;
-  position:relative;
-  left:72.67%;
-  overflow:hidden;
+.page:before,
+.navigation:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  box-shadow: inset 0 0 3em hsla(0, 0%, 0%, 0.05), 0 0 0.25em hsla(0, 0%, 0%, 0.05), 0 0.25em 0.25em hsla(0, 0%, 0%, 0.025);
 }
 
-#col3 {
-  float:left;
-  width:29.33%;
-  position:relative;
-  left:76.67%;
-  overflow:hidden;
-}
-
-
-.amp {
-  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-  font-style: italic;
-  font-weight: normal;
-}
-
-// em in media queries respond to the font size 
-// of the browser that the visitor is using.
-
-@media only screen and (max-width: 20em) { // 352px
-  body {
-    background-color: red !important;
+@media only screen and (max-width: 64em) {
+  .page, .page:before {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
   }
-}
-
-
-@media only screen and (min-width: 20.063em) and (max-width: 60em) { // 800px
-
-  p:first-child {
-    padding: 0 15px;
+  .page:first-child + .page:before {
+    left: 0;
   }
-
-  #col1 {
-    float: none !important;
-    width: 100% !important;
-    left: 0px !important;
+  .navigation {
+    width: 100%;
   }
-
-  #col2 {
-    float: none !important;
-    width: 100% !important;
-    left: 0px !important;
-  }
-
-  #col3 {
+  .navigation:before {
     display: none;
   }
-
-  #container3 {
-    clear:left;
-    width: 90% !important;
-    overflow:hidden;
-    margin: 50px auto;
-  }
-
-  #container2 {
-    clear:left;
-    float:left;
-    width: 100% !important;
-    overflow:hidden;
-    right: 0px !important;
-  }
-
-  #container1 {
-    float:left;
-    width: 100% !important;
-    position:relative;
-    right: 0px !important;
-  }
-
 }
 
-
-@media only screen and (min-width: 60.063em) and (max-width: 110em) {
-
-  #container3 {
-    float:none;
-    width:90%;
-    overflow:hidden;
-  margin: 50px auto;
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .page, .page:before {
+    width: 50%;
   }
-
-  #container2 {
-    clear:left;
-    float:left;
-    width:100%;
-    overflow:hidden;
-    right:0px;
-  }
-
-  #container1 {
-    float:left;
-    width:100%;
-    position:relative;
-    right:50%;
-  }
-
-  #col1 {
-    float:left;
-    width:46%;
-    position:relative;
-    left:52%;
-    overflow:hidden;
-  }
-
-  #col2 {
-    float:left;
-    width:46%;
-    position:relative;
-    left:56%;
-    overflow:hidden;
-  }
-
-  #col3 {
+  .navigation:before {
     display: none;
   }
-
-
+  .page:first-child + .page:before {
+    left: 50%;
+  }
+  .navigation {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    .column {
+      width: 50%;
+      margin: 0;
+      padding: 0 $padding;
+      float: right;
+      &:nth-child(2n+1) {
+        float: left;
+        clear: both;
+      }
+    }
+  }
 }
-
-@media only screen and (min-width: 111em) {
-
-}
-
-

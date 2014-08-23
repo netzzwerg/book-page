@@ -9,31 +9,30 @@
  */
 
 pre {
-
-    color: #FFFFFF;
-    font-family: 'Monaco', courier, monospace;
-    overflow-y: auto;
-    display: block;
-    margin: 2rem 0 2rem 0;
-    line-height: 100%; 
-
-    /* Browser specific (not valid) styles to make codeformatted text wrap */        
-
-    code {
-     white-space: code-wrap;       /* css-3 */
-     white-space: -moz-code-wrap;  /* Mozilla, since 1999 */
-     white-space: -code-wrap;      /* Opera 4-6 */
-     white-space: -o-code-wrap;    /* Opera 7 */
-     word-wrap: break-word;       /* Internet Explorer 5.5+ */
-    }
-
-    code + p {
-        margin-top: 1.5em;
-    }
-
-    /* remove cursor from inactive code section */
-    .ace_hidden-cursors {
-        opacity:0
-    }
-
+  color: #FFFFFF;
+  font-family: 'Monaco', courier, monospace;
+  overflow-y: auto;
+  display: block;
+  margin: 2rem 0 2rem 0;
+  line-height: 100%;
+  /* Browser specific (not valid) styles to make codeformatted text wrap */
+  code {
+    white-space: code-wrap;
+    /* css-3 */
+    white-space: -moz-code-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -code-wrap;
+    /* Opera 4-6 */
+    white-space: -o-code-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+  }
+  code + p {
+    margin-top: 1.5em;
+  }
+  /* remove cursor from inactive code section */
+  .ace_hidden-cursors {
+    opacity: 0;
+  }
 }

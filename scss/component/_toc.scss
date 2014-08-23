@@ -1,10 +1,3 @@
-$light-background-color: #e6e9ed;
-$dark-background-color: #1b1d20;
-
-$light-gray-color: #f5f7fa;
-$medium-gray-color: #aab2bd;
-$dark-gray-color: #656d78;
-
 .toc {
   counter-reset: chapter 0 figure 0;
   li {
@@ -24,17 +17,13 @@ $dark-gray-color: #656d78;
       position: relative;
       padding: 0 0 0 5px;
     }
-    span:after {
-      counter-increment: chapter;
-      content: " " counter(chapter, upper-roman) " ";
-    }
     overflow: hidden;
     text-overflow: ellipsis;
-    :before {
+    &:before {
       color: $dark-gray-color;
       float: left;
       width: 0;
-      content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+      content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
     }
   }
   h3.main-title {
@@ -49,13 +38,10 @@ $dark-gray-color: #656d78;
     color: #FFFFFF;
   }
   ul {
-    padding-left: 2rem;
-    width: 100%;
+    padding-left: 0px;
   }
   > ol, > ul, > p, > div {
-    padding: 0 0 0 4.8rem;
     line-height: 3.52rem;
-    width: 85%;
   }
   a, span, p, h1, h2 {
     color: #AAAAAA;
@@ -67,14 +53,22 @@ $dark-gray-color: #656d78;
   p.toc-section {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .toc-section:before {
-    content: '';
+  li.toc-section:before {
+    content: '' !important;
   }
   .toc-section + .toc-section {
     padding: 2rem 0 2rem 0;
   }
   .toc-section + li {
     padding: 2rem 0 0 0;
+  }
+  ul.chapter-count span:after {
+    counter-increment: chapter;
+    content: " " counter(chapter, upper-roman) " ";
+  }
+  ul.figure-count span:after {
+    counter-increment: figure;
+    content: "Fig. " counter(figure);
   }
   div.copyright {
     line-height: 1.5em;
@@ -87,10 +81,19 @@ $dark-gray-color: #656d78;
       text-align: justify;
     }
   }
-  ul:nth-child(4) li {
-    span:after {
-      counter-increment: figure;
-      content: "Fig. " counter(figure);
-    }
+}
+
+@media only screen and (max-width: 64em) {
+  .main-title {
+    font-size: 2rem !important;
+    margin: 0px !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .toc > ul, .copyright {
+    width: 80%;
+    margin: 0 auto;
   }
 }
