@@ -1,0 +1,65 @@
+$item-color: $dark-background-color;
+
+.post-item {
+  padding: 10px 20px;
+  margin: 20px 0;
+  line-height: normal;
+  border-left: 1px solid #fff;
+  &:hover {
+    border-left: 1px solid #EEE;
+  }
+}
+
+.post-item-header {
+  border-bottom: 2px solid $item-color;
+}
+
+.post-item-title {
+  font-size: 2em;
+  color: $item-color;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+.post-item-category {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: $item-color;
+  font-size: 80%;
+  text-decoration: none;
+}
+
+.post-item-more {
+  text-transform: uppercase;
+  color: $item-color;
+  border: 1px solid $item-color;
+  padding: 2px 8px;
+  margin: 0;
+}
+
+// style for the second page
+article + article {
+  .post-item {
+    border-left: none;
+    border-right: 1px solid #fff;
+  }
+  .post-item:hover {
+    border-left: none;
+    border-right: 1px solid #eeeeee;
+  }
+  .post-list-subhead {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  article + article {
+    .post-list-subhead {
+      text-align: left;
+    }
+    .post-item:hover {
+      border-left: 1px solid #eeeeee;
+    }
+  }
+}

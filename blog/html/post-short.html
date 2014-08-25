@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>book page layout</title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic|Crimson+Text:400,600' type='text/css' rel='stylesheet' />
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/post.css">
+	<script data-main="book" src="bower_components/requirejs/require.js"></script>
+</head>
+<body>
+
+	<div class="wrap">
+
+			<article class="page">
+
+				<img src="../img/02.png" width="450px">
+
+			</article>
+
+			<article class="page">
+
+				<header>
+					<div class="published-on">Mon Feb 03 2014</div>
+					<h1>Patternity, Proto-Patterns <span class="amp">&amp;</span> The Rule Of Three</h1>
+					<h2><span>Addy Osmani</span></h2>
+				</header>
+
+				<p>Remember that not every algorithm, best practice or solution represents what might be considered a complete pattern. There may be a few key ingredients here that are missing and the pattern community is generally wary of something claiming to be one unless it has been heavily vetted. Even if something is presented to us which <strong>appears</strong> to meet the criteria for a pattern, it should not be considered one until it has undergone suitable periods of scrutiny and testing by others.</p>
+
+
+				<p>Looking back upon the work by Alexander once more, he claims that a pattern should both be a process and a "thing". This definition is obtuse on purpose as he follows by saying that it is the process which should create the "thing". This is a reason why patterns generally focus on addressing a visually identifiable structure i.e we should be able to visually depict (or draw) a picture representing the structure that placing the pattern into practice results in.</p>
+
+				<p>Alternatively, the individual(s) sharing the pattern may not have the time or interest of going through the "pattern"-ity process and might release a short description of their proto-pattern instead. Brief descriptions or snippets of this type of pattern are known as patlets.</p>
+
+				<p>The work involved in fully documenting a qualified pattern can be quite daunting. Looking back at some of the earliest work in the field of design patterns, a pattern may be considered "good" if it does the following:</p>
+
+			</article>
+
+			<div class="navigation toc" id="col3">
+				<h3 class="main-title">Table of Contents</h3>
+				<ul>
+					<li><a href="#introduction">Introduction</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#whatisapattern">What is a Pattern?</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#patternity">Patternity, Proto-Patterns &amp; The Rule Of Three</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#designpatternstructure">The Structure Of A Design Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#writingdesignpatterns">Writing Design Patterns</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#antipatterns">Anti-Patterns</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#categoriesofdesignpatterns">Categories Of Design Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#summarytabledesignpatterns">Summary Table Of Design Pattern Categorization</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li class="toc-section"><a href="#designpatternsjavascript">JavaScript Design Patterns</a>
+						<ul>
+						<li class="toc-sub-item"><a href="#constructorpatternjavascript">Constructor Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#modulepatternjavascript">Module Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#revealingmodulepatternjavascript">Revealing Module Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#singletonpatternjavascript">Singleton Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#observerpatternjavascript">Observer Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#mediatorpatternjavascript">Mediator Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#prototypepatternjavascript">Prototype Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#commandpatternjavascript">Command Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#facadepatternjavascript">Facade Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#factorypatternjavascript">Factory Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#mixinpatternjavascript">Mixin Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#decoratorpatternjavascript">Decorator Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						<li class="toc-sub-item"><a href="#detailflyweight">Flyweight Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#detailmvcmvp">JavaScript MV* Patterns</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#detailmvc">MVC Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#detailmvp">MVP Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#detailmvvm">MVVM Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#modularjavascript">Modern Modular JavaScript Design Patterns</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#detailamd">AMD</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#detailcommonjs">CommonJS</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#detailharmony">ES Harmony</a><span class="post-date">Oct 27th, 2013</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#designpatternsjquery">Design Patterns In jQuery</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#compositepatternjquery">Composite Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#wrapperpatternjquery">Adapter Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#facadepatternjquery">Facade Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#observerpatternjquery">Observer Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#iteratorpatternjquery">Iterator Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#lazyinitialisationjquery">Lazy Initialization Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#proxypatternjquery">Proxy Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+							<li class="toc-sub-item"><a href="#builderpatternjquery">Builder Pattern</a><span class="post-date">Oct 27th, 2013</span></li>
+						</ul>
+					</li>
+					<li><a href="#jquerypluginpatterns">jQuery Plugin Design Patterns</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#detailnamespacing">JavaScript Namespacing Patterns</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#conclusions">Conclusions</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#references">References</a><span class="post-date">Oct 27th, 2013</span></li>
+				</ul>
+
+				<h3 class="main-title">List of Figures</h3>
+				<ul>
+					<li><a href="#">Sequence Diagram with SVG</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#">Williams Typewriter</a><span class="post-date">Oct 27th, 2013</span></li>
+					<li><a href="#">Post No. 4 Typewriter</a><span class="post-date">Oct 27th, 2013</span></li>
+				</ul>
+
+				<h3 class="main-title">Index of Words</h3>
+				<ul>
+					<li class="toc-section"><a href="#a">A</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#">Adapter Pattern</a><span class="post-date">12 times</span></li>
+							<li class="toc-sub-item"><a href="#">Adddddsdfdsf</a><span class="post-date">2 times</span></li>
+							<li class="toc-sub-item"><a href="#">Agggeeeffesfe</a><span class="post-date">5 times</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#b">B</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#">Builder Pattern</a><span class="post-date">8 times</span></li>
+							<li class="toc-sub-item"><a href="#">Bdddddsdfdsf</a><span class="post-date">5 times</span></li>
+							<li class="toc-sub-item"><a href="#">Bgggeeeffesfe</a><span class="post-date">32 times</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#c">C</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#">Cbbbbdfdsf</a><span class="post-date">12 times</span></li>
+							<li class="toc-sub-item"><a href="#">Cdddddsdfdsf</a><span class="post-date">2 times</span></li>
+							<li class="toc-sub-item"><a href="#">Cgggeeeffesfe</a><span class="post-date">5 times</span></li>
+						</ul>
+					</li>
+					<li class="toc-section"><a href="#d">D</a>
+						<ul>
+							<li class="toc-sub-item"><a href="#">Dbbbbdfdsf</a><span class="post-date">8 times</span></li>
+							<li class="toc-sub-item"><a href="#">Ddddddsdfdsf</a><span class="post-date">5 times</span></li>
+							<li class="toc-sub-item"><a href="#">Dgggeeeffesfe</a><span class="post-date">32 times</span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+.toc {
+  counter-reset: chapter 0 figure 0;
+  li {
+    white-space: nowrap;
+    list-style-position: inside;
+    line-height: 30px;
+    color: $medium-gray-color;
+    a, span {
+      color: $light-gray-color;
+      background-color: $dark-background-color;
+    }
+    a {
+      padding: 0 5px 0 0;
+    }
+    span {
+      float: right;
+      position: relative;
+      padding: 0 0 0 5px;
+    }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:before {
+      color: $dark-gray-color;
+      float: left;
+      width: 0;
+      content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+    }
+  }
+  h3.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 6% 11.4% 6% 11.4%;
+    padding: 0 10%;
+    font-size: 6.52rem;
+    line-height: 6.52rem;
+    color: #FFFFFF;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  > ol, > ul, > p, > div {
+    line-height: 3.52rem;
+  }
+  a, span, p, h1, h2 {
+    color: #AAAAAA;
+  }
+  .toc-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 0 3rem 0;
+  }
+  p.toc-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  li.toc-section:before {
+    content: '' !important;
+  }
+  .toc-section + .toc-section {
+    padding: 2rem 0 2rem 0;
+  }
+  .toc-section + li {
+    padding: 2rem 0 0 0;
+  }
+  ul.chapter-count span:after {
+    counter-increment: chapter;
+    content: " " counter(chapter, upper-roman) " ";
+  }
+  ul.figure-count span:after {
+    counter-increment: figure;
+    content: "Fig. " counter(figure);
+  }
+  div.copyright {
+    line-height: 1.5em;
+    color: #3a4145;
+    h2 {
+      padding: 2rem 0 2rem 0;
+      font-size: 2rem;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .main-title {
+    font-size: 2rem !important;
+    margin: 0px !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .toc > ul, .copyright {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

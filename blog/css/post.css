@@ -42,160 +42,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-html {
-  font-size: 62.5%; }
-
-body {
-  font-size: 16px;
-  font-size: 1.6rem; }
-
-h1 {
-  font-size: 44px;
-  font-size: 4.4rem; }
-
-h2 {
-  font-size: 37px;
-  font-size: 3.7rem; }
-
-h3 {
-  font-size: 27px;
-  font-size: 2.7rem; }
-
-h4 {
-  font-size: 23px;
-  font-size: 2.3rem; }
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-h6 {
-  font-size: 10px;
-  font-size: 1rem; }
-
-.amp {
-  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-  font-style: italic;
-  font-weight: normal; }
-
-a {
-  text-decoration: none;
-  color: #3A4145; }
-
-.page, .navigation {
-  padding: 1.5rem 3rem;
-  float: left; }
-
-.wrap {
-  width: 100%;
-  max-width: 1800px;
-  margin: 2rem auto;
-  position: relative; }
-
-.wrap:before,
-.wrap:after {
-  content: '';
-  display: table; }
-
-.wrap:after {
-  clear: both; }
-
-.page,
-.page:before {
-  width: 35%; }
-
-.page:before {
-  left: 0px;
-  background-color: #FFF; }
-
-.page:first-child + .page:before {
-  left: 35%; }
-
-.navigation:before {
-  left: 70%; }
-
-.navigation,
-.navigation:before {
-  width: 30%;
-  background-color: #1b1d20; }
-
-.page:before,
-.navigation:before {
-  content: '';
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: -1;
-  box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.05), 0 0 0.25em rgba(0, 0, 0, 0.05), 0 0.25em 0.25em rgba(0, 0, 0, 0.025); }
-
-@media only screen and (max-width: 64em) {
-  .page, .page:before {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    width: 100%; }
-
-  .page:first-child + .page:before {
-    left: 0; }
-
-  .navigation {
-    width: 100%; }
-
-  .navigation:before {
-    display: none; } }
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  .page, .page:before {
-    width: 50%; }
-
-  .navigation:before {
-    display: none; }
-
-  .page:first-child + .page:before {
-    left: 50%; }
-
-  .navigation {
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px; }
-    .navigation .column {
-      width: 50%;
-      margin: 0;
-      padding: 0 3rem;
-      float: right; }
-      .navigation .column:nth-child(2n+1) {
-        float: left;
-        clear: both; } }
-*,
-*:before,
-*:after {
-  box-sizing: border-box; }
-
-html {
-  min-height: 100%; }
-
-body {
-  color: #3A4145;
-  background-color: #ececec;
-  background: linear-gradient(160deg, rgba(74, 137, 220, 0.2), rgba(233, 87, 63, 0.2) 60%), url(img/bg-diagmonds.png);
-  padding: 0;
-  margin: 0;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 150%;
-  cursor: default;
-  -webkit-font-smoothing: antialiased; }
-
-article p, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol, article header {
-  word-wrap: break-word; }
-article p {
-  text-align: justify;
-  line-height: 1.5em; }
-article h1 {
-  font-weight: 900;
-  line-height: 1.1em; }
-article p + p {
-  text-indent: 2em; }
-
 .toc {
   counter-reset: chapter 0 figure 0; }
   .toc li {
@@ -355,7 +201,7 @@ table.framed tr.doubleline, table.framed-hr tr.doubleline {
   border-bottom: medium double; }
 
 table th {
-  background-image: linear-gradient(#EDEDED, #EBEBEB);
+  background-image: linear-gradient(#ededed, #ebebeb);
   border-bottom: 1px solid #E0E0E0;
   padding: 21px 25px 22px; }
 
@@ -379,14 +225,14 @@ table tr td:first-child {
   text-align: left; }
 
 table tr td {
-  background-image: linear-gradient(#FBFBFB, #FAFAFA);
+  background-image: linear-gradient(#fbfbfb, #fafafa);
   border-bottom: 1px solid #E0E0E0;
   border-left: 1px solid #E0E0E0;
   border-top: 1px solid #FFFFFF;
   padding: 18px; }
 
 table tr.even td {
-  background-image: linear-gradient(#F8F8F8, #F6F6F6); }
+  background-image: linear-gradient(#f8f8f8, #f6f6f6); }
 
 table tr:last-child td {
   border-bottom: 0 none; }
@@ -398,7 +244,7 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 3px; }
 
 table tr:hover td {
-  background-image: linear-gradient(#F2F2F2, #F0F0F0); }
+  background-image: linear-gradient(#f2f2f2, #f0f0f0); }
 
 .table-heading {
   padding-bottom: 30px;
@@ -407,28 +253,25 @@ table tr:hover td {
 .table-text {
   color: #6F6F6F; }
 
-header + p {
+.page header + p {
   font-size: 1.8rem; }
-
-header {
+.page header {
   margin: 3rem 0 0 0; }
-  header div {
+  .page header div {
     color: #3a4145;
     font-size: 1.8rem;
     padding: 0 0 0 2px;
     color: #666666; }
-  header h1 {
+  .page header h1 {
     margin: 5rem 0rem 5rem 0; }
-  header h2 {
+  .page header h2 {
     border-top: 1px solid #DDD;
     color: #DDD;
     margin: 0 0 10px 0;
     text-align: center; }
-    header h2 span {
+    .page header h2 span {
       font-size: 2.2rem;
       padding: 0 1rem;
       background: white;
       position: relative;
       top: -1.4rem; }
-
-/*# sourceMappingURL=main.css.map */

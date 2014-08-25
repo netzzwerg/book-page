@@ -1,0 +1,173 @@
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  .column.full {
+    width: 100%; }
+
+  .column.two-thirds {
+    width: 66.7%; }
+
+  .column.half {
+    width: 50%; }
+
+  .column.third {
+    width: 33.3%; }
+
+  .column.fourth {
+    width: 24.95%; }
+
+  .column.flow-opposite {
+    float: right; } }
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.hide {
+  display: none; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.toc {
+  counter-reset: chapter 0 figure 0; }
+  .toc li {
+    white-space: nowrap;
+    list-style-position: inside;
+    line-height: 30px;
+    color: #aab2bd;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .toc li a, .toc li span {
+      color: #f5f7fa;
+      background-color: #1b1d20; }
+    .toc li a {
+      padding: 0 5px 0 0; }
+    .toc li span {
+      float: right;
+      position: relative;
+      padding: 0 0 0 5px; }
+    .toc li:before {
+      color: #656d78;
+      float: left;
+      width: 0;
+      content: "\00a0\00a0\00a0\00a0\00a0" ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
+  .toc h3.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 6% 11.4% 6% 11.4%;
+    padding: 0 10%;
+    font-size: 6.52rem;
+    line-height: 6.52rem;
+    color: #FFFFFF; }
+  .toc ul {
+    padding-left: 0px; }
+  .toc > ol, .toc > ul, .toc > p, .toc > div {
+    line-height: 3.52rem; }
+  .toc a, .toc span, .toc p, .toc h1, .toc h2 {
+    color: #AAAAAA; }
+  .toc .toc-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 0 3rem 0; }
+  .toc p.toc-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .toc li.toc-section:before {
+    content: '' !important; }
+  .toc .toc-section + .toc-section {
+    padding: 2rem 0 2rem 0; }
+  .toc .toc-section + li {
+    padding: 2rem 0 0 0; }
+  .toc ul.chapter-count span:after {
+    counter-increment: chapter;
+    content: " " counter(chapter,upper-roman) " "; }
+  .toc ul.figure-count span:after {
+    counter-increment: figure;
+    content: "Fig. " counter(figure); }
+  .toc div.copyright {
+    line-height: 1.5em;
+    color: #3a4145; }
+    .toc div.copyright h2 {
+      padding: 2rem 0 2rem 0;
+      font-size: 2rem; }
+    .toc div.copyright p {
+      text-align: justify; }
+
+@media only screen and (max-width: 64em) {
+  .main-title {
+    font-size: 2rem !important;
+    margin: 0px !important;
+    letter-spacing: 0 !important; } }
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .toc > ul, .copyright {
+    width: 80%;
+    margin: 0 auto; } }
+.post-list-subhead {
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em; }
+
+.post-item {
+  padding: 10px 20px;
+  margin: 20px 0;
+  line-height: normal;
+  border-left: 1px solid #fff; }
+  .post-item:hover {
+    border-left: 1px solid #EEE; }
+
+.post-item-header {
+  border-bottom: 2px solid #1b1d20; }
+
+.post-item-title {
+  font-size: 2em;
+  color: #1b1d20;
+  margin-bottom: 0.2em;
+  font-weight: bold; }
+
+.post-item-category {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: #1b1d20;
+  font-size: 80%;
+  text-decoration: none; }
+
+.post-item-more {
+  text-transform: uppercase;
+  color: #1b1d20;
+  border: 1px solid #1b1d20;
+  padding: 2px 8px;
+  margin: 0; }
+
+article + article .post-item {
+  border-left: none;
+  border-right: 1px solid #fff; }
+article + article .post-item:hover {
+  border-left: none;
+  border-right: 1px solid #eeeeee; }
+article + article .post-list-subhead {
+  text-align: right; }
+
+@media only screen and (max-width: 64em) {
+  article + article .post-list-subhead {
+    text-align: left; }
+  article + article .post-item:hover {
+    border-left: 1px solid #eeeeee; } }

@@ -7,6 +7,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
+          base: 'blog',
           port: 9000,
           hostname: '0.0.0.0', // Change to 0.0.0.0 to external connection.
           open: true,
@@ -23,14 +24,14 @@ module.exports = function(grunt) {
 
     watch: {
       scss: {
-        files: ['scss/**/*.scss'],
+        files: ['blog/scss/**/*.scss'],
         tasks: ['sass:dist'], // Add more tasks here.
         options: {
           livereload: 35729
         }
       },
       reload: {
-        files: ['book.js' , 'index.html' , 'main.css' ],
+        files: ['blog/js/**/*.js' , 'blog/html/**/*.html' , 'blog/css/**/*.css' ],
         tasks: [], // Add more tasks here.
         options: {
           livereload: 35729
@@ -40,17 +41,17 @@ module.exports = function(grunt) {
 
     sass: {
       dist: {
-        files: {
-          'main.css': 'scss/main.scss'
-        }
-      },
-      dev: {
-        options: {
-          sourceMap: true
-        },
-        files: {
-          'main.css': 'scss/main.scss'
-        }
+        files: [{
+          'blog/css/main.css': 'blog/scss/main.scss'
+        },{
+          'blog/css/index.css': 'blog/scss/page/index.scss'
+        },{
+          'blog/css/home.css': 'blog/scss/page/home.scss'
+        },{
+          'blog/css/post.css': 'blog/scss/page/post.scss'
+        },{
+          'blog/css/book.css': 'blog/scss/page/book.scss'
+        }]
       }
     }
 

@@ -1,0 +1,30 @@
+.page {
+  header + p {
+    font-size: 1.8rem;
+  }
+  header {
+    margin: 3rem 0 0 0;
+    div {
+      color: #3a4145;
+      font-size: 1.8rem;
+      padding: 0 0 0 2px;
+      color: #666666;
+    }
+    h1 {
+      margin: 5rem 0rem 5rem 0;
+    }
+    h2 {
+      border-top: 1px solid #DDD;
+      color: #DDD;
+      margin: 0 0 10px 0;
+      text-align: center;
+      span {
+        font-size: 2.2rem;
+        padding: 0 1rem;
+        background: $content-background;
+        position: relative;
+        top: -1.4rem;
+      }
+    }
+  }
+}
