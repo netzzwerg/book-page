@@ -132,7 +132,8 @@
     line-height: 3.52rem; }
   .toc a, .toc span, .toc p, .toc h1, .toc h2 {
     color: #AAAAAA; }
-  .toc .toc-section {
+  .toc .toc-section, .toc hr {
+    border-width: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 0 3rem 0; }
   .toc p.toc-section {
@@ -142,7 +143,9 @@
   .toc .toc-section + .toc-section {
     padding: 2rem 0 2rem 0; }
   .toc .toc-section + li {
-    padding: 2rem 0 0 0; }
+    padding-top: 2rem; }
+  .toc hr + li {
+    padding-top: 2rem; }
   .toc ul.chapter-count span:after {
     counter-increment: chapter;
     content: " " counter(chapter,upper-roman) " "; }
@@ -327,6 +330,6 @@ article > img {
     .page header h2 span {
       font-size: 2.2rem;
       padding: 0 1rem;
-      background: white;
+      background: #f7f7f7;
       position: relative;
       top: -1.4rem; }

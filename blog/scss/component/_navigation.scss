@@ -52,7 +52,8 @@
   a, span, p, h1, h2 {
     color: #AAAAAA;
   }
-  .toc-section {
+  .toc-section, hr {
+    border-width: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 0 3rem 0;
   }
@@ -66,7 +67,10 @@
     padding: 2rem 0 2rem 0;
   }
   .toc-section + li {
-    padding: 2rem 0 0 0;
+    padding-top: 2rem;
+  }
+  hr + li {
+    padding-top: 2rem;
   }
   ul.chapter-count span:after {
     counter-increment: chapter;

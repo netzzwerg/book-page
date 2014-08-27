@@ -80,7 +80,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #3a4145; }
+  color: #1b1d20; }
 
 .page, .navigation {
   padding: 1.5rem 3rem;
@@ -106,7 +106,7 @@ a {
 
 .page:before {
   left: 0px;
-  background-color: white; }
+  background-color: #f7f7f7; }
 
 .page:first-child + .page:before {
   left: 35%; }
@@ -173,8 +173,8 @@ html {
   min-height: 100%; }
 
 body {
-  color: #3a4145;
-  background-color: #ececec;
+  color: #1b1d20;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
