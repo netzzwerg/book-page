@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         options: {
           base: 'blog',
           port: 9000,
+          useAvailablePort: true,
           hostname: '0.0.0.0', // Change to 0.0.0.0 to external connection.
           open: true,
           middleware: function (connect, options) {
@@ -16,6 +17,7 @@ module.exports = function(grunt) {
               require('connect-livereload')({ port: 35729 }),
               // Serve static files.
               connect.static(options.base),
+              connect.static('bower_components')
             ];
           }
         }

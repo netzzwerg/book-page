@@ -80,7 +80,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #3A4145; }
+  color: #3a4145; }
 
 .page, .navigation {
   padding: 1.5rem 3rem;
@@ -89,7 +89,7 @@ a {
 .wrap {
   width: 100%;
   max-width: 1800px;
-  margin: 2rem auto;
+  margin: 8rem auto;
   position: relative; }
 
 .wrap:before,
@@ -106,7 +106,7 @@ a {
 
 .page:before {
   left: 0px;
-  background-color: #FFF; }
+  background-color: white; }
 
 .page:first-child + .page:before {
   left: 35%; }
@@ -173,7 +173,7 @@ html {
   min-height: 100%; }
 
 body {
-  color: #3A4145;
+  color: #3a4145;
   background-color: #ececec;
   padding: 0;
   margin: 0;
@@ -208,5 +208,3 @@ article h1 {
   line-height: 1.1em; }
 article p + p {
   text-indent: 2em; }
-
-/*# sourceMappingURL=main.css.map */

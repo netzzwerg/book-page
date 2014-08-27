@@ -2,7 +2,7 @@
   'use strict';
 
   requirejs.config({
-    baseUrl: 'bower_components',
+    baseUrl: '../',
     paths: {
       'jquery': 'jquery/jquery.min',
       'ace': 'ace/lib/ace',
@@ -17,7 +17,7 @@
     new Weblime({
       el: $('.weblime')[0],
       theme: 'monokai',
-      path: 'source/',
+      path: '../source/',
       callback: function(weblime) {
         console.log(weblime);
       }
@@ -26,7 +26,7 @@
     new Weblime({
       el: $('.weblime')[1],
       theme: 'monokai',
-      path: 'source/',
+      path: '../source/',
       callback: function(weblime) {
         console.log(weblime);
       }
