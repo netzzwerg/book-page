@@ -42,6 +42,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.navigation .page-subhead {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: right;
+  color: rgba(255, 255, 255, 0.1); }
+
 .toc {
   counter-reset: chapter 0 figure 0; }
   .toc li {
@@ -171,3 +176,5 @@ article + article .post-list-subhead {
     text-align: left; }
   article + article .post-item:hover {
     border-left: 1px solid #eeeeee; } }
+
+/*# sourceMappingURL=home.css.map */

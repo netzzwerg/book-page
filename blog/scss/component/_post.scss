@@ -1,0 +1,7 @@
+// short blog entry
+article {
+  & > img {
+    display: block;
+    margin: 10rem auto;
+  }
+}

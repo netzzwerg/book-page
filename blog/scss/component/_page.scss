@@ -24,3 +24,21 @@ body {
   cursor: $cursor-default;
   -webkit-font-smoothing: antialiased;
 }
+
+.page-subhead {
+  text-transform: uppercase;
+  color: #656d78;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  margin-bottom: 3rem;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.1em;
+}
+
+article + article {
+  .page-subhead {
+    text-align: right;
+  }
+}

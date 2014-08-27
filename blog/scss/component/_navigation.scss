@@ -1,3 +1,11 @@
+.navigation {
+  .page-subhead {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: right;
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 .toc {
   counter-reset: chapter 0 figure 0;
   li {

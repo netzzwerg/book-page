@@ -80,7 +80,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #3a4145; }
+  color: #3A4145; }
 
 .page, .navigation {
   padding: 1.5rem 3rem;
@@ -106,7 +106,7 @@ a {
 
 .page:before {
   left: 0px;
-  background-color: white; }
+  background-color: #FFF; }
 
 .page:first-child + .page:before {
   left: 35%; }
@@ -173,7 +173,7 @@ html {
   min-height: 100%; }
 
 body {
-  color: #3a4145;
+  color: #3A4145;
   background-color: #ececec;
   padding: 0;
   margin: 0;
@@ -183,6 +183,20 @@ body {
   line-height: 150%;
   cursor: default;
   -webkit-font-smoothing: antialiased; }
+
+.page-subhead {
+  text-transform: uppercase;
+  color: #656d78;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  margin-bottom: 3rem;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.1em; }
+
+article + article .page-subhead {
+  text-align: right; }
 
 article p, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol, article header {
   word-wrap: break-word; }
@@ -194,3 +208,5 @@ article h1 {
   line-height: 1.1em; }
 article p + p {
   text-indent: 2em; }
+
+/*# sourceMappingURL=main.css.map */
