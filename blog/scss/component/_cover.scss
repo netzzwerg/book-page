@@ -1,36 +1,108 @@
 $cover-color: $dark-background-color;
 
-.cover {
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
+.wrap {
+  border-top: 2px solid black;
+  border-right: 10px solid black;
+  border-left: 0px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  position: relative;
+  font-family: 'Gentium Book Basic', serif;
+}
+
+.page {
+  -webkit-font-smoothing: antialiased;
+  padding: 0px;
+}
+
+.page:first-child:before {
+  background-color: #1b1d20;
+}
+
+.page, .page:before {
+  width: 50%;
+}
+
+.page:first-child + .page:before {
+  left: 50%;
+}
+
+.cover, .cover:before {
   min-height: 80%;
-  background-color: $cover-color;
-  background-image: url("http://cl.ly/image/2e3z073t1Y3a/100-25-6-monochrome.png");
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.2), inset 0 0 3em hsla(0, 0%, 0%, 0.15), 0 0 0.5em hsla(0, 0%, 0%, 0.25), 0 0.25em 0.25em hsla(0, 0%, 0%, 0.1);
   a {
     color: #FFF;
   }
   &:hover {}
 }
 
-.cover a {
-  display: block;
-  padding: 1.5em 1.25em;
-  text-decoration: none;
+.cover {
+  padding: 3rem;
+  a {
+    display: block;
+    padding: 1.5em 1.25em;
+    text-decoration: none;
+  }
+  h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4.75rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 2.25em;
+    padding-top: .8125em;
+    padding-bottom: 2em;
+    text-align: left;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+    box-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.1);
+  }
 }
 
-.cover h1 {
-  font-family: 'Lato', 'Open Sans', sans-serif;
-  font-size: 1.75em;
-  font-weight: 300;
-  line-height: 1.25;
-  margin-bottom: 2.25em;
-  padding-top: .8125em;
-  padding-bottom: 2em;
-  text-align: center;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
-  box-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.1);
+.toc {
+  box-shadow: inset 0 0 3em rgba(0, 0, 0, 0.05), 0 0 0.25em rgba(0, 0, 0, 0.05), 0 0.25em 0.25em rgba(0, 0, 0, 0.025);
+  padding: 3rem 4rem 1rem 3rem;
+  ul, li {
+    list-style: none;
+  }
+  ul {
+    padding-top: 80%;
+    padding-left: 0px;
+  }
+  li {
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+    text-align: right;
+  }
+  li > span {
+    float: left;
+    font-size: 5rem;
+  }
+  footer {
+    padding-top: 8rem;
+    text-align: justify;
+    color: #333;
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
 }
 
-.page:before {
-  box-shadow: none;
-  background-color: transparent;
+.toc:after {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 10;
+  width: 12px;
+  height: 100%;
+  background: linear-gradient(to right, #dddddd 33.33%, #f0f0f0 33.33%, #f0f0f0 66.66%, white 66.66%);
+  background-size: 3px 100%;
+  content: '';
 }
