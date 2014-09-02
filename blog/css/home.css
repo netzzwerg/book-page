@@ -46,10 +46,12 @@
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .header-burger-menue {
     display: none; } }
-.navigation .page-subhead {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: right;
-  color: rgba(255, 255, 255, 0.1); }
+.navigation {
+  opacity: 0.8; }
+  .navigation .page-subhead {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: right;
+    color: rgba(255, 255, 255, 0.1); }
 
 .toc {
   counter-reset: chapter 0 figure 0; }

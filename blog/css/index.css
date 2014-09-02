@@ -75,6 +75,7 @@
     color: #FFF; }
 
 .cover {
+  opacity: 0.8;
   padding: 3rem; }
   .cover a {
     display: block;
