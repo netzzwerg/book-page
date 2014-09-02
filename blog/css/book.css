@@ -166,7 +166,7 @@ body {
   counter-reset: figures; }
 
 .figure {
-  margin: 0 15px 1em; }
+  margin: 0px; }
   .figure img {
     margin: 0 auto;
     display: block;
@@ -219,17 +219,14 @@ table {
   border-radius: 3px 3px 3px 3px;
   color: #666666;
   font-size: 12px;
-  width: auto;
+  width: 100%;
   overflow-y: hidden;
-  display: block;
+  display: table;
   border-spacing: 0px; }
 
 td {
   vertical-align: text-top;
   padding: 0.3em 0.6em; }
-
-table + table {
-  margin-top: 3rem; }
 
 table.framed, table.framed-hr {
   border-collapse: collapse; }

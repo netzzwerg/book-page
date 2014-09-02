@@ -1,4 +1,7 @@
 article {
+  & > p, & > h1, & > h2, & > h3, & > h4, & > h5, & > caption, & > ul, & > ol, & > header, & > table {
+    margin-top: 2rem;
+  }
   p, h2, h3, h4, h5, figcaption, ul, ol, header {
     word-wrap: break-word;
   }

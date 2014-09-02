@@ -1,0 +1,27 @@
+header + p {
+  font-size: 1.8rem;
+}
+
+header {
+  div {
+    color: #3a4145;
+    font-size: 1.8rem;
+    padding: 0 0 0 2px;
+    color: #666666;
+  }
+  h1 {
+    margin: 0px;
+  }
+  h2 {
+    border-top: 1px solid #DDD;
+    color: #DDD;
+    text-align: center;
+    span {
+      font-size: 2.2rem;
+      padding: 0 1rem;
+      background: $content-background;
+      position: relative;
+      top: -1.4rem;
+    }
+  }
+}

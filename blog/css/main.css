@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 @media (min-width: 40rem) {
   .column {
     float: left;
@@ -198,6 +199,8 @@ body {
 article + article .page-subhead {
   text-align: right; }
 
+article > p, article > h1, article > h2, article > h3, article > h4, article > h5, article > caption, article > ul, article > ol, article > header, article > table {
+  margin-top: 2rem; }
 article p, article h2, article h3, article h4, article h5, article figcaption, article ul, article ol, article header {
   word-wrap: break-word; }
 article p {
@@ -208,5 +211,26 @@ article h1 {
   line-height: 1.1em; }
 article p + p {
   text-indent: 2em; }
+
+#debug-bar {
+  font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(27, 29, 32, 0.8);
+  border-top: 1px solid rgba(250, 250, 250, 0.8);
+  z-index: 99999999999999999;
+  box-shadow: 0 -4px 10px 0 rgba(27, 29, 32, 0.3); }
+  #debug-bar li {
+    display: inline;
+    list-style: none; }
+  #debug-bar a {
+    color: rgba(250, 250, 250, 0.6);
+    text-transform: uppercase;
+    border: 1px solid rgba(250, 250, 250, 0.6);
+    border-radius: 4px;
+    padding: 4px 6px;
+    margin: 0 8px; }
 
 /*# sourceMappingURL=main.css.map */

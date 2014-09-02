@@ -1,6 +1,6 @@
 
 // Select the source / destination folder.
-var sourceFolder = Folder.selectDialog( 'Select the folder with Illustrator files you want to convert to SVG', '~' );
+var sourceFolder = Folder.selectDialog( 'Select the folder with Illustrator for files you want to convert to SVG', '~' );
 
 // Open Files
 var files = sourceFolder.getFiles('*.png');
