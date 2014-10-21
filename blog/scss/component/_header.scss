@@ -9,6 +9,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: $dark-background-color;
   font-family: $font-family;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
   .header-logo {
     font-size: 1.5rem;
     color: #fff;

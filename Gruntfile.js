@@ -8,13 +8,13 @@ module.exports = function(grunt) {
       server: {
         options: {
           base: 'blog',
-          port: 9003,
+          port: 9009,
           useAvailablePort: true,
           hostname: '0.0.0.0', // Change to 0.0.0.0 to external connection.
           open: true,
           middleware: function (connect, options) {
             return [
-              require('connect-livereload')({ port: 35722 }),
+              require('connect-livereload')({ port: 35729 }),
               // Serve static files.
               connect.static(options.base),
               connect.static('bower_components')
@@ -29,14 +29,14 @@ module.exports = function(grunt) {
         files: ['blog/scss/**/*.scss'],
         tasks: ['sass:dist'], // Add more tasks here.
         options: {
-          livereload: 35722
+          livereload: 35729
         }
       },
       reload: {
         files: ['blog/js/**/*.js' , 'blog/html/**/*.html' , 'blog/css/**/*.css' ],
         tasks: [], // Add more tasks here.
         options: {
-          livereload: 35722
+          livereload: 35729
         }
       }
     },

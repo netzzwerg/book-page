@@ -8,7 +8,9 @@
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #1b1d20;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0); }
   .header .header-logo {
     font-size: 1.5rem;
     color: #fff;
