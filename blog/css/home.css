@@ -130,6 +130,22 @@
   .toc > ul, .copyright {
     width: 80%;
     margin: 0 auto; } }
+.pagination {
+  position: absolute;
+  bottom: -5rem;
+  width: 70%; }
+  .pagination a {
+    text-transform: uppercase;
+    color: #f5f7fa;
+    border: 1px solid #f5f7fa;
+    padding: 2px 8px; }
+  .pagination a:first-child {
+    float: left;
+    margin-left: 5rem; }
+  .pagination a:last-child {
+    float: right;
+    margin-right: 5rem; }
+
 .post-list-subhead {
   text-transform: uppercase;
   color: #aaa;
@@ -185,3 +201,5 @@ article + article .post-list-subhead {
     text-align: left; }
   article + article .post-item:hover {
     border-left: 1px solid #eeeeee; } }
+
+/*# sourceMappingURL=home.css.map */

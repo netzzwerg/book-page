@@ -1,0 +1,19 @@
+.pagination {
+	position: absolute;
+	bottom: -5rem;
+	width: 70%;
+	a {
+		text-transform: uppercase;
+		color: $light-gray-color;
+		border: 1px solid $light-gray-color;
+		padding: 2px 8px;
+	}
+	a:first-child {
+		float: left;
+		margin-left: 5rem;
+	}
+	a:last-child {
+		float:right;
+		margin-right: 5rem;
+	}
+}

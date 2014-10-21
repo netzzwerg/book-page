@@ -256,7 +256,7 @@ table.framed tr.doubleline, table.framed-hr tr.doubleline {
   border-bottom: medium double; }
 
 table th {
-  background-image: linear-gradient(#ededed, #ebebeb);
+  background-image: linear-gradient(#EDEDED, #EBEBEB);
   border-bottom: 1px solid #E0E0E0;
   padding: 21px 25px 22px; }
 
@@ -280,14 +280,14 @@ table tr td:first-child {
   text-align: left; }
 
 table tr td {
-  background-image: linear-gradient(#fbfbfb, #fafafa);
+  background-image: linear-gradient(#FBFBFB, #FAFAFA);
   border-bottom: 1px solid #E0E0E0;
   border-left: 1px solid #E0E0E0;
   border-top: 1px solid #FFFFFF;
   padding: 18px; }
 
 table tr.even td {
-  background-image: linear-gradient(#f8f8f8, #f6f6f6); }
+  background-image: linear-gradient(#F8F8F8, #F6F6F6); }
 
 table tr:last-child td {
   border-bottom: 0 none; }
@@ -299,7 +299,7 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 3px; }
 
 table tr:hover td {
-  background-image: linear-gradient(#f2f2f2, #f0f0f0); }
+  background-image: linear-gradient(#F2F2F2, #F0F0F0); }
 
 .table-heading {
   padding-bottom: 30px;
@@ -350,3 +350,5 @@ article > img {
     text-align: left !important; }
     .page-cover h2 span {
       background-color: #FFFFFF !important; } }
+
+/*# sourceMappingURL=post.css.map */

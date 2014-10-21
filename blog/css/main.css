@@ -212,7 +212,6 @@ article h1 {
 article p + p {
   text-indent: 2em; }
 
-
 #debug-bar {
   font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
@@ -233,8 +232,6 @@ article p + p {
     border-radius: 4px;
     padding: 4px 6px;
     margin: 0 8px; }
-
-/*# sourceMappingURL=main.css.map */
 
 video#bgvid {
   xdisplay: none;
@@ -264,3 +261,4 @@ video#bgvid {
   xbackground-image: url("http://f.cl.ly/items/3B1019351z2d34101z03/noise.png");
   xbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAOUlEQVQ4T2P8DwQMVASMowZSHJqjYUhxEDIMXBjOmjWLIS0tjaAXBs6FBJ0GVTDqQmJDCre6ERiGAEr9UsVRYEhLAAAAAElFTkSuQmCC); }
 
+/*# sourceMappingURL=main.css.map */
