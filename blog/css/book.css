@@ -92,6 +92,14 @@
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .header-burger-menue {
     display: none; } }
+body > footer {
+  width: 70%;
+  padding-left: 8rem;
+  text-align: center;
+  color: #f5f7fa; }
+  body > footer a {
+    color: #f5f7fa; }
+
 .toc {
   counter-reset: chapter 0 figure 0; }
   .toc li {
