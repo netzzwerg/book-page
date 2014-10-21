@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           base: 'blog',
-          port: 9000,
+          port: 9009,
           useAvailablePort: true,
           hostname: '0.0.0.0', // Change to 0.0.0.0 to external connection.
           open: true,

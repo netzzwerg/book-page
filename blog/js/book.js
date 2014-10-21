@@ -32,6 +32,15 @@
       }
     });
 
+    function backgroundVideoTimer(sec) {
+        $('#bgvid')[0].play();
+        setTimeout(function() {
+          $('#bgvid')[0].pause();
+        }, sec * 1000);
+    }
+
+    //backgroundVideoTimer(6);
+
   });
 
 }());
