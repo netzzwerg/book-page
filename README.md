@@ -10,6 +10,11 @@ Examples
 
 ![typewriter](http://netzzwerg.github.io/book-page/images/typewriter-theme-v02.png)
 
+Layout
+-------
+
+![typewriter](http://netzzwerg.github.io/book-page/images/typewriter-theme-layout)
+
 Structure
 -------
 
@@ -19,14 +24,12 @@ Structure
     │   ├── _function.scss
     │   ├── _grid.scss
     │   ├── _helper.scss
-    │   ├── _mixin.scss
-    │   └── ...
+    │   └── _mixin.scss
     │
     ├── setting/
     │   ├── _main.sass
     │   ├── _color.scss
-    │   ├── _font.scss
-    │   └── ...
+    │   └── _font.scss
     │
     ├── component/
     │   ├── _article.scss
