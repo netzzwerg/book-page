@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import "../settings";
+
+@import "../component/header";
+@import "../component/footer";
+@import "../component/navigation";
+@import "../component/pagination";
+@import "../component/post-list";
+@import "../component/post-item";
+
+.page:before, .navigation:before {
+  box-shadow: none;
+}
+
+.page:before {
+  background-color: #1b1d20;
+}

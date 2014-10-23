@@ -1,47 +1,3 @@
-@media (min-width: 40rem) {
-  .column {
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-
-  .column.full {
-    width: 100%; }
-
-  .column.two-thirds {
-    width: 66.7%; }
-
-  .column.half {
-    width: 50%; }
-
-  .column.third {
-    width: 33.3%; }
-
-  .column.fourth {
-    width: 24.95%; }
-
-  .column.flow-opposite {
-    float: right; } }
-.left {
-  float: left !important; }
-
-.right {
-  float: right !important; }
-
-.clearfix {
-  *zoom: 1; }
-  .clearfix:before, .clearfix:after {
-    content: " ";
-    display: table; }
-  .clearfix:after {
-    clear: both; }
-
-.hide {
-  display: none; }
-
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 .header {
   position: fixed;
   z-index: 5;
@@ -100,6 +56,13 @@ body > footer {
   body > footer a {
     color: #f5f7fa; }
 
+.navigation {
+  opacity: 0.8; }
+  .navigation .page-subhead {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: right;
+    color: rgba(255, 255, 255, 0.1); }
+
 .toc {
   counter-reset: chapter 0 figure 0; }
   .toc li {
@@ -137,7 +100,8 @@ body > footer {
     line-height: 3.52rem; }
   .toc a, .toc span, .toc p, .toc h1, .toc h2 {
     color: #AAAAAA; }
-  .toc .toc-section {
+  .toc .toc-section, .toc hr {
+    border-width: 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 0 3rem 0; }
   .toc p.toc-section {
@@ -147,7 +111,9 @@ body > footer {
   .toc .toc-section + .toc-section {
     padding: 2rem 0 2rem 0; }
   .toc .toc-section + li {
-    padding: 2rem 0 0 0; }
+    padding-top: 2rem; }
+  .toc hr + li {
+    padding-top: 2rem; }
   .toc ul.chapter-count span:after {
     counter-increment: chapter;
     content: " " counter(chapter,upper-roman) " "; }
@@ -172,136 +138,70 @@ body > footer {
   .toc > ul, .copyright {
     width: 80%;
     margin: 0 auto; } }
-body {
-  counter-reset: figures; }
-
-.figure {
-  margin: 0px; }
-  .figure img {
-    margin: 0 auto;
-    display: block;
-    max-width: 100%; }
-  .figure figcaption {
-    font-size: 0.8em;
+.pagination {
+  position: absolute;
+  bottom: -5rem;
+  width: 70%; }
+  .pagination a {
     text-transform: uppercase;
-    color: #666666;
-    text-align: right;
-    counter-increment: figures; }
-  .figure figcaption:before {
-    content: "Fig. " counter(figures) " - "; }
+    color: #f5f7fa;
+    border: 1px solid #f5f7fa;
+    padding: 2px 8px; }
+  .pagination a:first-child {
+    float: left;
+    margin-left: 5rem; }
+  .pagination a:last-child {
+    float: right;
+    margin-right: 5rem; }
 
-/**
- * Blackboard theme
- *
- * Adapted from Domenico Carbotta's TextMate theme of the same name
- *
- * @author Domenico Carbotta
- * @author Craig Campbell
- * @version 1.0.2
- */
-pre {
-  color: #FFFFFF;
-  font-family: 'Monaco', courier, monospace;
-  overflow-y: auto;
-  display: block;
-  margin: 2rem 0 2rem 0;
-  line-height: 100%;
-  /* Browser specific (not valid) styles to make codeformatted text wrap */
-  /* remove cursor from inactive code section */ }
-  pre code {
-    white-space: code-wrap;
-    /* css-3 */
-    white-space: -moz-code-wrap;
-    /* Mozilla, since 1999 */
-    white-space: -code-wrap;
-    /* Opera 4-6 */
-    white-space: -o-code-wrap;
-    /* Opera 7 */
-    word-wrap: break-word;
-    /* Internet Explorer 5.5+ */ }
-  pre code + p {
-    margin-top: 1.5em; }
-  pre .ace_hidden-cursors {
-    opacity: 0; }
+.post-list-subhead {
+  text-transform: uppercase;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+  padding: 0.4em 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em; }
 
-table {
-  background: none repeat scroll 0 0 #EAEBEC;
-  border-radius: 3px 3px 3px 3px;
-  color: #666666;
-  font-size: 12px;
-  width: 100%;
-  overflow-y: hidden;
-  display: table;
-  border-spacing: 0px; }
+.post-item {
+  padding: 10px 20px;
+  margin: 20px 0;
+  line-height: normal; }
 
-td {
-  vertical-align: text-top;
-  padding: 0.3em 0.6em; }
+.post-item-header {
+  border-bottom: 2px solid #1b1d20; }
 
-table.framed, table.framed-hr {
-  border-collapse: collapse; }
+.post-item-title {
+  font-size: 2em;
+  color: #1b1d20;
+  margin-bottom: 0.2em;
+  font-weight: bold; }
 
-table.framed td {
-  border: thin solid #DDDDDD; }
+.post-item-category {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: #1b1d20;
+  font-size: 80%;
+  text-decoration: none; }
 
-table.framed-hr td {
-  border-bottom: thin solid #DDDDDD; }
+.post-item-date {
+  float: right; }
 
-table.framed td.right, table.framed-hr td.right {
-  text-align: right; }
+.post-item-more {
+  text-transform: uppercase;
+  color: #1b1d20;
+  border: 1px solid #1b1d20;
+  padding: 2px 8px;
+  margin: 0; }
 
-table.framed tr.doubleline, table.framed-hr tr.doubleline {
-  border-bottom: medium double; }
+@media only screen and (max-width: 64em) {
+  article + article .post-list-subhead {
+    text-align: left; }
+  article + article .post-item:hover {
+    border-left: 1px solid #eeeeee; } }
+.page:before, .navigation:before {
+  box-shadow: none; }
 
-table th {
-  background-image: linear-gradient(#ededed, #ebebeb);
-  border-bottom: 1px solid #E0E0E0;
-  padding: 21px 25px 22px; }
-
-table th:first-child {
-  padding-left: 20px;
-  text-align: left; }
-
-table tr:first-child th:first-child {
-  border-top-left-radius: 3px; }
-
-table tr:first-child th:last-child {
-  border-top-right-radius: 3px; }
-
-table tr {
-  padding-left: 20px;
-  text-align: center; }
-
-table tr td:first-child {
-  border-left: 0 none;
-  padding-left: 20px;
-  text-align: left; }
-
-table tr td {
-  background-image: linear-gradient(#fbfbfb, #fafafa);
-  border-bottom: 1px solid #E0E0E0;
-  border-left: 1px solid #E0E0E0;
-  border-top: 1px solid #FFFFFF;
-  padding: 18px; }
-
-table tr.even td {
-  background-image: linear-gradient(#f8f8f8, #f6f6f6); }
-
-table tr:last-child td {
-  border-bottom: 0 none; }
-
-table tr:last-child td:first-child {
-  border-bottom-left-radius: 3px; }
-
-table tr:last-child td:last-child {
-  border-bottom-right-radius: 3px; }
-
-table tr:hover td {
-  background-image: linear-gradient(#f2f2f2, #f0f0f0); }
-
-.table-heading {
-  padding-bottom: 30px;
-  padding-top: 20px; }
-
-.table-text {
-  color: #6F6F6F; }
+.page:before {
+  background-color: #1b1d20; }

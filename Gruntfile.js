@@ -53,6 +53,8 @@ module.exports = function(grunt) {
           'blog/css/post.css': 'blog/scss/page/post.scss'
         },{
           'blog/css/book.css': 'blog/scss/page/book.scss'
+        },{
+          'blog/css/labs.css': 'blog/scss/page/labs.scss'
         }]
       }
     }
