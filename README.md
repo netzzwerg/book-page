@@ -13,7 +13,7 @@ Examples
 Layout
 -------
 
-![typewriter](http://netzzwerg.github.io/book-page/images/typewriter-theme-layout)
+![typewriter](http://netzzwerg.github.io/book-page/images/typewriter-theme-layout.png)
 
 Structure
 -------
