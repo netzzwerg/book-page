@@ -10,6 +10,55 @@ Examples
 
 ![typewriter](http://netzzwerg.github.io/book-page/images/typewriter-theme-v02.png)
 
+Structure
+-------
+
+    scss/
+    │
+    ├── base/
+    │   ├── _function.scss
+    │   ├── _grid.scss
+    │   ├── _helper.scss
+    │   ├── _mixin.scss
+    │   └── ...
+    │
+    ├── setting/
+    │   ├── _main.sass
+    │   ├── _color.scss
+    │   ├── _font.scss
+    │   └── ...
+    │
+    ├── component/
+    │   ├── _article.scss
+    │   ├── _code.scss
+    │   ├── _cover.scss
+    │   ├── _figure.scss
+    │   ├── _footer.scss
+    │   ├── _header.scss
+    │   ├── _layout.scss
+    │   ├── _navigation.scss
+    │   ├── _normalize.scss
+    │   ├── _note.scss
+    │   ├── _page-cover.scss
+    │   ├── _page.scss
+    │   ├── _pagination.scss
+    │   ├── _post-header.scss
+    │   ├── _post-item.scss
+    │   ├── _post-list.scss
+    │   ├── _post.scss
+    │   ├── _table.scss
+    │   ├── _toc.scss
+    │   └── _typography.scss
+    │
+    ├── page/
+    │   ├── book.scss
+    │   ├── home.scss
+    │   ├── index.scss
+    │   ├── labs.scss
+    │   └── post.scss
+    │
+    └── main.scss            # primary Sass file
+
 License
 -------
 
